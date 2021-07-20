@@ -1,0 +1,54 @@
+header {
+  width: 70%;
+  height: 50%;
+  padding-left: 50px;
+  background-color: #FFF7EF;
+  justify-content: space-between;
+  display: flex;
+}
+header .form {
+  padding: 50px;
+}
+header h1 {
+  margin: 50px;
+}
+
+article {
+  background-color: #F2EDE9;
+  position: absolute;
+  right: 0px;
+  top: 0%;
+  width: 27%;
+  height: 100vh;
+  height: 290%;
+}
+article .side {
+  margin: 50px;
+}
+article .side h2 {
+  margin: 60px 0 100px 0;
+}
+article .side ul li {
+  list-style: none;
+  line-height: 40px;
+}
+
+.img-list {
+  padding: 0px;
+  margin: 0;
+}
+.img-list .sample {
+  width: 73%;
+  height: auto;
+}
+.img-list .sample2 {
+  width: 30%;
+  padding: 30px;
+}
+.img-list .sample3 {
+  width: 30%;
+  padding: 30px;
+}
+.img-list .sample4 {
+  width: 73%;
+}
