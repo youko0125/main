@@ -1,0 +1,157 @@
+
+.c-img-list {
+    padding: 0px;
+    margin: 0;
+    line-height:0;
+    .c-image{
+        position: relative;
+    &::before{
+        content: "ダミーサイト";
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #FFF7EF;
+        @include tab { 
+            font-size: 36px;   
+            }
+        }
+    }
+       .c-sample {
+            width: 80%;
+            height:auto;
+            @include tab { 
+                width: 100%;   
+                }
+            }
+}
+.c-flex{
+    display: flex;
+    .c-img{
+        width: 32%;
+        position: relative;
+    p {
+        display: inline-block;
+        top: 5%;
+        left: 25%;
+        font-size: 55px;
+        position: absolute;
+        color: #FFF7EF;
+        font-family: Roboto;
+        @include tab { 
+           font-size: 35px;
+        }
+    }
+    .c-takeout{
+        width: 100%;
+        padding: 10% 20% ;
+        @include tab { 
+            width: 130%; 
+            margin-right: 20px;
+                }
+            }
+        }
+    }
+    .c-img2{
+        width: 32%;
+        position: relative;
+        p {
+            display: inline-block;
+            top: 5%;
+            left: 35%;
+            font-size: 55px;
+            position: absolute;
+            color: #FFF7EF;
+            font-family: Roboto;
+            @include tab { 
+                width: 50%;
+                left: 75%;
+               font-size: 35px;
+        }
+        }
+    .c-EatIn{
+        width: 100%;
+        padding: 10% 30%;
+        position: absolute;
+        @include tab { 
+            width: 130%;
+            margin-left: 90px;
+            }
+        }
+        } 
+    .c-example {
+        height: auto;
+        position: relative;
+        box-sizing: border-box;
+        span{
+            position: absolute;
+            top: 80px;
+            left: 70px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFF7EF;
+            z-index: 10;
+            @include tab { 
+                top:40px;  
+            }
+        }
+        .text{
+            position: absolute;
+            top: -10%;
+            width: 45%;
+            height: 45%;
+            p{
+           position: absolute;
+           top: 180px;
+           left: 70px;
+           z-index: 10;
+           line-height:1.5em;
+           color: #FFFFFF;
+           font-size: 10px;
+           font-weight: bold;
+           line-height: 1.5rem;
+           @include tab { 
+            top: 100px;
+            width: 180%;
+            }
+         }
+        }
+    
+        &::after{
+            content: "";
+            position:absolute;
+            width: 50%;
+            height: 100%;
+            background:rgba(66, 64, 64, 0.5);
+            left: 0;
+            @include tab { 
+            width: 100%;
+            }
+
+    }
+
+        &::before{
+            content:"";
+            display:block;
+            width:60px;
+            height:1px;
+            background-color:#FFFFFF;
+            position:absolute;
+            left:70px;
+            top:120px;
+            z-index: 10;
+            @include tab { 
+                top: 70px;
+                }
+        }
+    }
+        .c-sample4 {
+            width: 80%;
+            height:auto;
+            background-color: black;
+            @include tab { 
+               width: 100%;    
+            }
+        } 
+    

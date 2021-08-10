@@ -1,98 +1,50 @@
-body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-.form-group{
-    width: 80%;
-    height: 25%;
-    left: 20px;
-    background-color: #FFF7EF;
-    display: flex; 
-    h1{
-        color: #707070;
-    }
-    .form {
-        position: absolute;
-        top: 70px;
-        width: 30%;
-        right: 25%;
-        .label {
-            width: 65%;
-            height: 30px;
-            color: #F2EDE9;
-            border-radius: 7px;
-        }
-        .qanda{
-            width: 20%;
-            height: 30px;
-            border-radius: 7px;
-            background: linear-gradient(to top,#F2EDE9, #DED8D3);
-        }
-}
-h1 {
-    margin: 50px;
-}
-}
-article{
-    background-color: #F2EDE9;
-    position: absolute;
-    right: 0px;
-    top: 0%;
-    width: 20%;
-    height: 100vh; 
-    height: 235%;
-    .side {
-        opacity:0.5;
-        margin: 50px;
-    h2{
-        margin: 60px 0 100px  0;
-    }
-    ul { 
-        li { list-style: none;
-             line-height: 40px;
-        }
-    }
-}
-}
-.img-list {
-    padding: 0px;
-    margin: 0;
-    line-height:0;
-    .image{
-        position: relative;
-        p {
-            position: absolute;
-            top: 50%;
-            left: 40px;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #FFF7EF;
-        }
-    .sample {
-        width: 80%;
-        height:auto;
-}
-}
-    .sample2 {
-        width: 30%;
-        padding: 40px;
-    }
-    .sample3 {
-        width: 30%;
-        padding: 40px;
-    } 
-    .sample4 {
-        width : 80%;
-        height: auto;
-    }
-}
-footer {
-    width: 1100px;
-    line-height:0;
-    .sample5{
-	bottom:0;
-    background-size: cover;
-    }
-}
-}
+
+// ==========================================================================
+// Foundation
+// ==========================================================================
+
+@import "foundation/_reset";
+@import "foundation/_base";
+@import "foundation/_mixin";
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+@import "layout/_footer";
+@import "layout/_header";
+@import "layout/_main";
+@import "layout/_sidebar";
+
+// ==========================================================================
+// Object
+// ==========================================================================
+
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+
+@import "object/component/_button";
+@import "object/component/_dialog";
+@import "object/component/_grid";
+@import "object/component/_media";
+
+// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------
+
+@import "object/project/_articles";
+@import "object/project/_comments";
+@import "object/project/_gallery";
+@import "object/project/_profile";
+
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+
+@import "object/utility/_align";
+@import "object/utility/_clearfix";
+@import "object/utility/_margin";
+@import "object/utility/_position";
+@import "object/utility/_size";
+@import "object/utility/_text";

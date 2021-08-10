@@ -1,0 +1,54 @@
+.l-form-group{
+    width: 80%;
+    height: 25%;
+    left: 20px;
+    background-color: #FFF7EF;
+    display: flex; 
+    @include tab {
+      text-align: center; 
+      display: inline-block;
+      width: 100%;
+      height: 217px;
+    }   
+    h1{
+       margin: 50px;
+       color: #707070;
+        @include tab { 
+            margin-top: 30px;
+            margin-bottom: 60px; 
+            font-size: 32px;    
+        }
+    }
+    .l-form {
+        position: absolute;
+        top: 70px;
+        right: 25%;
+        width: 300px;
+        @include tab {
+            top: 20%;
+            left: 5%;
+            width: 100%;
+        }  
+        .l-label {
+            width: 65%;
+            height: 30px;
+            color: #F2EDE9;
+            border-radius: 7px;
+            @include tab {
+               width: 55%;
+               height: 46px;
+            }
+        }
+        .l-qanda{
+            width: 20%;
+            height: 30px;
+            border-radius: 7px;
+            background: linear-gradient(to top,#F2EDE9, #DED8D3);
+            @include tab {
+                width: 20%;
+                height: 46px;
+                display: inline-block;
+             }
+        }
+    }
+}
