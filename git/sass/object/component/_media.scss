@@ -82,8 +82,31 @@
         } 
     .c-example {
         height: auto;
-        position: relative;
-        box-sizing: border-box;
+        position: relative; 
+        .c-sample4 {
+            width: 80%;
+            height:30%;
+            background-color: black;
+            position: relative;
+            &::before{
+                display: block;
+                position: absolute;
+                content: "";
+                width: 50%;
+                height: 100%;
+                background:rgba(66, 64, 64, 0.5);
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                @include tab { 
+                width: 100%;
+                }
+            } 
+            @include tab { 
+               width: 100%;    
+            }
+        } 
         span{
             position: absolute;
             top: 80px;
@@ -117,20 +140,6 @@
             }
          }
         }
-    
-        &::after{
-            content: "";
-            position:absolute;
-            width: 50%;
-            height: 100%;
-            background:rgba(66, 64, 64, 0.5);
-            left: 0;
-            @include tab { 
-            width: 100%;
-            }
-
-    }
-
         &::before{
             content:"";
             display:block;
@@ -145,13 +154,5 @@
                 top: 70px;
                 }
         }
+        
     }
-        .c-sample4 {
-            width: 80%;
-            height:auto;
-            background-color: black;
-            @include tab { 
-               width: 100%;    
-            }
-        } 
-    
