@@ -5,8 +5,8 @@ article{
     right: 0px;
     top: 0%;
     width: 20%;
-    height: 100vh; 
-    height: 254%;
+    min-height: 100vh;
+    height: 300%;
     @include tab {
        display: none;
       } 
