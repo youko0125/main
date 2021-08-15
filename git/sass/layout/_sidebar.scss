@@ -1,25 +1,29 @@
-article{
-    box-sizing: border-box;
-    background-color: #F2EDE9;
-    position: absolute;
-    right: 0px;
-    top: 0%;
-    width: 20%;
-    min-height: 100vh;
-    height: 300%;
-    @include tab {
-       display: none;
-      } 
-    .l-side {
-        color: #707070;
-        margin: 50px;
-    h2{
-        margin: 60px 0 100px  0;
-    }
-    ul { 
-        li { list-style: none;
-             line-height: 40px;
+.l-side {
+        box-sizing: border-box;
+        background-color: #F2EDE9;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        overflow:hidden;
+        width: 20%;
+        min-height: 100vh;
+        @include tab {
+           display: none;
+          }
+          .l-menu{
+            color: #707070;
+            font-weight: normal;
+            padding: 30px 0 40px 30px;
+            h2{
+                margin: 0;
+                padding: 50px 0px 40px  0px;
+            }
+            ul { 
+                padding: 10px 0 0 20px;
+                li { list-style: none;
+                     line-height: 35px;
+                }
+            }
         }
-    }
-}
+  
 }

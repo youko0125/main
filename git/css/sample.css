@@ -2,6 +2,8 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 footer {
@@ -88,31 +90,36 @@ footer .l-footer-nav span p {
   }
 }
 
-article {
+.l-side {
   box-sizing: border-box;
   background-color: #F2EDE9;
   position: absolute;
   right: 0px;
-  top: 0%;
+  top: 0px;
+  overflow: hidden;
   width: 20%;
   min-height: 100vh;
-  height: 300%;
 }
 @media (max-width: 834px) {
-  article {
+  .l-side {
     display: none;
   }
 }
-article .l-side {
+.l-side .l-menu {
   color: #707070;
-  margin: 50px;
+  font-weight: normal;
+  padding: 30px 0 40px 30px;
 }
-article .l-side h2 {
-  margin: 60px 0 100px 0;
+.l-side .l-menu h2 {
+  margin: 0;
+  padding: 50px 0px 40px 0px;
 }
-article .l-side ul li {
+.l-side .l-menu ul {
+  padding: 10px 0 0 20px;
+}
+.l-side .l-menu ul li {
   list-style: none;
-  line-height: 40px;
+  line-height: 35px;
 }
 
 .c-img-list {
