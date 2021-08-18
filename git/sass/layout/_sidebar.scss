@@ -3,10 +3,8 @@
         background-color: #F2EDE9;
         position: absolute;
         right: 0px;
-        top: 0px;
-        overflow:hidden;
         width: 20%;
-        min-height: 100vh;
+        height: 100%;
         @include tab {
            display: none;
           }
@@ -25,5 +23,5 @@
                 }
             }
         }
-  
-}
+    }
+

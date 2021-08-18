@@ -6,15 +6,14 @@ footer {
     background-color: #9D8670;
     color: #FFFFFF;
     position: absolute;
-        .l-footer-nav 
-        span{
-            font-size: 20px;
-            margin-top: 20px;
+    z-index: 10;
+    .l-footer-nav span {
+        font-size: 20px;
+        margin-top: 20px;
+        display: inline-block;
+        p {
             display: inline-block;
-        
-        p{
-                display: inline-block;
-                margin: 0px;
-            }
+            margin: 0px;
         }
     }
+}

@@ -1,54 +1,84 @@
-.l-form-group{
-    width: 80%;
+.l-form-group {
+    width: 100%;
     height: 25%;
     left: 20px;
     background-color: #FFF7EF;
-    display: flex; 
     @include tab {
-      text-align: center; 
-      display: inline-block;
-      width: 100%;
-      height: 217px;
-    }   
-    h1{
-       margin: 50px;
-       color: #707070;
-        @include tab { 
-            margin-top: 30px;
-            margin-bottom: 60px; 
-            font-size: 32px;    
-        }
+        text-align: center;
+        display: block;
+        width: 100%;
     }
-    .l-form {
-        position: absolute;
-        top: 70px;
-        right: 25%;
-        width: 300px;
+    .l-header-form {
+        display: flex;
         @include tab {
-            top: 20%;
-            left: 5%;
+            display: inline-block;
             width: 100%;
-        }  
-        .l-label {
-            width: 65%;
-            height: 30px;
-            color: #F2EDE9;
-            border-radius: 7px;
+            height: 60%;
+        }
+        h1 {
+            margin: 50px;
+            color: #707070;
             @include tab {
-               width: 55%;
-               height: 46px;
+                margin-top: 20px;
+                margin-bottom: 60px;
+                font-size: 32px;
             }
         }
-        .l-qanda{
-            width: 20%;
-            height: 30px;
-            border-radius: 7px;
-            background: linear-gradient(to top,#F2EDE9, #DED8D3);
+        .l-form {
+            position: absolute;
+            top: 70px;
+            right: 25%;
+            width: 300px;
             @include tab {
+                margin: 30px 30px 30px 0;
+                left: 5%;
+                width: 100%;
+            }
+            .l-label {
+                width: 65%;
+                height: 30px;
+                color: #F2EDE9;
+                border-radius: 7px;
+                @include tab {
+                    width: 55%;
+                    height: 46px;
+                }
+            }
+            .l-qanda {
                 width: 20%;
-                height: 46px;
-                display: inline-block;
-             }
+                height: 30px;
+                border-radius: 7px;
+                background: linear-gradient(to top, #F2EDE9, #DED8D3);
+                @include tab {
+                    width: 20%;
+                    height: 46px;
+                    display: inline-block;
+                }
+            }
         }
+    }
+}
+
+.c-image {
+    position: relative;
+    &::before {
+        content: "ダミーサイト";
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #FFF7EF;
+        @include tab {
+            font-size: 36px;
+        }
+    }
+}
+
+.c-sample {
+    width: 100%;
+    height: auto;
+    @include tab {
+        width: 100%;
     }
 }
