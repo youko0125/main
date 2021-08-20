@@ -8,7 +8,6 @@ body {
 
 footer {
   width: 100%;
-  height: 150px;
   line-height: 3;
   text-align: center;
   background-color: #9D8670;
@@ -28,7 +27,6 @@ footer .l-footer-nav span p {
 
 .l-form-group {
   width: 100%;
-  height: 25%;
   left: 20px;
   background-color: #FFF7EF;
 }
@@ -37,6 +35,7 @@ footer .l-footer-nav span p {
     text-align: center;
     display: block;
     width: 100%;
+    height: 217px;
   }
 }
 .l-form-group .l-header-form {
@@ -46,29 +45,28 @@ footer .l-footer-nav span p {
   .l-form-group .l-header-form {
     display: inline-block;
     width: 100%;
-    height: 60%;
   }
 }
 .l-form-group .l-header-form h1 {
-  margin: 50px;
+  margin: 40px;
   color: #707070;
 }
 @media (max-width: 834px) {
   .l-form-group .l-header-form h1 {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 60px;
     font-size: 32px;
   }
 }
 .l-form-group .l-header-form .l-form {
   position: absolute;
-  top: 70px;
+  top: 50px;
   right: 25%;
   width: 300px;
 }
 @media (max-width: 834px) {
   .l-form-group .l-header-form .l-form {
-    margin: 30px 30px 30px 0;
+    margin: 80px 30px 20px 0;
     left: 5%;
     width: 100%;
   }
@@ -96,34 +94,6 @@ footer .l-footer-nav span p {
     width: 20%;
     height: 46px;
     display: inline-block;
-  }
-}
-
-.c-image {
-  position: relative;
-}
-.c-image::before {
-  content: "ダミーサイト";
-  position: absolute;
-  top: 50%;
-  left: 40px;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #FFF7EF;
-}
-@media (max-width: 834px) {
-  .c-image::before {
-    font-size: 36px;
-  }
-}
-
-.c-sample {
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 834px) {
-  .c-sample {
-    width: 100%;
   }
 }
 
@@ -170,17 +140,33 @@ footer .l-footer-nav span p {
     width: 100%;
   }
 }
-.c-module .l-main .c-img-list {
-  padding: 0px;
-  margin: 5% 0;
-  line-height: 0;
-  height: 50%;
+.c-module .l-main .c-sample {
+  width: 100%;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-img-list {
-    margin: 20% 0 0 0;
-    height: 45%;
+  .c-module .l-main .c-sample {
+    width: 100%;
   }
+}
+.c-module .l-main .c-image {
+  position: relative;
+}
+.c-module .l-main .c-image::before {
+  content: "ダミーサイト";
+  position: absolute;
+  top: 40%;
+  left: 40px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FFF7EF;
+}
+@media (max-width: 834px) {
+  .c-module .l-main .c-image::before {
+    font-size: 36px;
+  }
+}
+.c-module .l-main .c-img-list {
+  line-height: 0;
 }
 .c-module .l-main .c-img-list .c-flex {
   display: flex;
@@ -191,86 +177,104 @@ footer .l-footer-nav span p {
 }
 @media (max-width: 834px) {
   .c-module .l-main .c-img-list .c-flex .c-img {
-    width: 30%;
-    margin: 0;
+    width: 32%;
   }
 }
 .c-module .l-main .c-img-list .c-flex .c-img p {
+  position: absolute;
   display: inline-block;
   top: 5%;
-  left: 25%;
+  left: 26%;
   font-size: 55px;
-  position: absolute;
   color: #FFF7EF;
   font-family: Roboto;
 }
 @media (max-width: 834px) {
   .c-module .l-main .c-img-list .c-flex .c-img p {
+    width: 60%;
+    left: 25%;
     font-size: 35px;
   }
 }
-.c-module .l-main .c-img-list .c-flex .c-img .c-takeout {
+.c-module .l-main .c-img-list .c-flex .c-img::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 105px;
+  top: 150px;
+}
+.c-module .l-main .c-img-list .c-flex .c-takeout {
   width: 100%;
-  padding: 10% 20%;
+  padding: 10% 15%;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-img-list .c-flex .c-img .c-takeout {
+  .c-module .l-main .c-img-list .c-flex .c-takeout {
     width: 130%;
-    margin-right: 20px;
   }
 }
-.c-module .l-main .c-img-list .c-img2 {
+.c-module .l-main .c-img2 {
   width: 40%;
   position: relative;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-img-list .c-img2 {
-    width: 30%;
+  .c-module .l-main .c-img2 {
+    width: 32%;
   }
 }
-.c-module .l-main .c-img-list .c-img2 p {
+.c-module .l-main .c-img2 p {
   display: inline-block;
   top: 5%;
-  left: 35%;
+  left: 36%;
   font-size: 55px;
   position: absolute;
   color: #FFF7EF;
   font-family: Roboto;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-img-list .c-img2 p {
+  .c-module .l-main .c-img2 p {
     width: 50%;
     left: 75%;
     font-size: 35px;
   }
 }
-.c-module .l-main .c-img-list .c-img2 .c-EatIn {
+.c-module .l-main .c-img2::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 5px;
+  background-color: #FFFFFF;
+  position: absolute;
+  left: 105px;
+  top: 22%;
+}
+.c-module .l-main .c-img2 .c-EatIn {
   width: 100%;
   padding: 10% 30%;
   position: absolute;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-img-list .c-img2 .c-EatIn {
+  .c-module .l-main .c-img2 .c-EatIn {
     width: 130%;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 }
-.c-module .l-main .c-example {
+.c-module .c-example {
   width: 100%;
-  height: 20%;
   position: relative;
   line-height: 0;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-example {
+  .c-module .c-example {
     width: 100%;
   }
 }
-.c-module .l-main .c-example .c-blok {
+.c-module .c-example .c-blok {
   position: absolute;
   display: block;
   width: 60%;
-  height: 100%;
   background: rgba(66, 64, 64, 0.5);
   top: 0;
   left: 0;
@@ -279,11 +283,11 @@ footer .l-footer-nav span p {
   z-index: 5;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-example .c-blok {
+  .c-module .c-example .c-blok {
     width: 100%;
   }
 }
-.c-module .l-main .c-example .c-blok span {
+.c-module .c-example .c-blok span {
   position: absolute;
   top: 15%;
   left: 70px;
@@ -292,17 +296,17 @@ footer .l-footer-nav span p {
   color: #FFF7EF;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-example .c-blok span {
+  .c-module .c-example .c-blok span {
     top: 40px;
   }
 }
-.c-module .l-main .c-example .c-blok .text {
+.c-module .c-example .c-blok .text {
   position: absolute;
   top: 10%;
   width: 90%;
   height: 45%;
 }
-.c-module .l-main .c-example .c-blok .text p {
+.c-module .c-example .c-blok .text p {
   position: absolute;
   top: 70px;
   left: 70px;
@@ -314,24 +318,22 @@ footer .l-footer-nav span p {
   line-height: 1.5rem;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-example .c-blok .text p {
+  .c-module .c-example .c-blok .text p {
     top: 35%;
     width: 90%;
   }
 }
-.c-module .l-main .c-example .c-sample4 {
+.c-module .c-example .c-sample4 {
   width: 100%;
-  height: 100%;
   background-color: black;
   position: relative;
-  line-height: 0;
 }
 @media (max-width: 834px) {
-  .c-module .l-main .c-example .c-sample4 {
+  .c-module .c-example .c-sample4 {
     width: 100%;
   }
 }
-.c-module .l-main .c-example::before {
+.c-module .c-example::before {
   content: "";
   display: block;
   width: 60px;
