@@ -1,6 +1,8 @@
 $(function() {
     $('.o-button').click(function() { // ボタンがクリックされたら
-        $(this).toggleClass(); // ボタン自身にactiveクラスを付与し
+        $(this).toggleClass('active'); // ボタン自身にactiveクラスを付与し
+        // $('.l-side').toggleClass('panelactive'); // ナビゲーションにpanelactiveクラスを付与
+
     })
 });
 

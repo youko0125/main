@@ -97,7 +97,7 @@ footer .l-footer-nav span p {
   }
 }
 
-.l-side {
+.l-side .active {
   box-sizing: border-box;
   background-color: #F2EDE9;
   position: absolute;
@@ -106,23 +106,23 @@ footer .l-footer-nav span p {
   height: 100%;
 }
 @media (max-width: 834px) {
-  .l-side {
+  .l-side .active {
     display: none;
   }
 }
-.l-side .l-menu {
+.l-side .active .l-menu {
   color: #707070;
   font-weight: normal;
   padding: 30px 0 40px 30px;
 }
-.l-side .l-menu h2 {
+.l-side .active .l-menu h2 {
   margin: 0;
   padding: 50px 0px 40px 0px;
 }
-.l-side .l-menu ul {
+.l-side .active .l-menu ul {
   padding: 10px 0 0 20px;
 }
-.l-side .l-menu ul li {
+.l-side .active .l-menu ul li {
   list-style: none;
   line-height: 35px;
 }
