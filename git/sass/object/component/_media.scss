@@ -1,278 +1,306 @@
-   .c-module {
-       position: relative;
-       display: flex;
-       width: 100%;
-       .l-main {
-           width: 80%;
-           @include tab {
-               width: 100%;
-           }
-           .c-sample {
-               width: 100%;
-               @include tab {
-                   width: 100%;
-               }
-           }
-           .c-image {
-               position: relative;
-               &::before {
-                   content: "ダミーサイト";
-                   position: absolute;
-                   top: 40%;
-                   left: 40px;
-                   font-size: 1.5em;
-                   font-weight: bold;
-                   color: #FFF7EF;
-                   @include tab {
-                       font-size: 36px;
-                   }
-               }
-           }
-           .c-img-list {
-               line-height: 0;
-               @include tab {}
-               .c-flex {
-                   display: flex;
-                   .c-img-takeout {
-                       width: 40%;
-                       position: relative;
-                       margin: 5% 5%;
-                       @include tab {
-                           width: 60%;
-                           font-size: 55px;
-                           margin: 5% 3%;
-                       }
-                       .c-img {
-                           position: relative;
-                           width: 100%;
-                           .c-takeout {
-                               position: relative;
-                               max-width: 100%;
-                               height: auto;
-                               width/***/
-                               : auto;
-                           }
-                           & p {
-                               position: absolute;
-                               display: inline-block;
-                               top: 0%;
-                               left: 10%;
-                               font-size: 55px;
-                               color: #FFF7EF;
-                               font-family: Roboto;
-                               @include tab {
-                                   font-size: 55px;
-                               }
-                               &::before {
-                                   content: "";
-                                   display: inline-block;
-                                   width: 60px;
-                                   height: 5px;
-                                   background-color: #FFFFFF;
-                                   position: absolute;
-                                   top: 50px;
-                               }
-                           }
-                           .c-out-img {
-                               position: absolute;
-                               top: 45%;
-                               width: 100%;
-                               height: 25%;
-                               .c-out1 {
-                                   display: block;
-                                   margin-left: auto;
-                                   margin-right: auto;
-                                   width: 95%;
-                                   height: 100%;
-                                   background-color: #FFFFFF;
-                                   span {
-                                       padding: 20px;
-                                       display: inline-block;
-                                       font-size: 20px;
-                                   }
-                                   p {
-                                       display: inline-block;
-                                       font-size: 15px;
-                                   }
-                               }
-                               .c-out2 {
-                                   box-sizing: border-box;
-                                   display: block;
-                                   margin-top: 5%;
-                                   background-color: #FFFFFF;
-                                   margin-left: auto;
-                                   margin-right: auto;
-                                   width: 95%;
-                                   height: 100%;
-                                   span {
-                                       padding: 20px;
-                                       display: inline-block;
-                                       font-size: 20px;
-                                   }
-                                   p {
-                                       display: inline-block;
-                                       font-size: 15px;
-                                   }
-                               }
-                           }
-                       }
-                   }
-                   .c-img-eatin {
-                       width: 40%;
-                       position: relative;
-                       margin: 5% 5%;
-                       @include tab {
-                           width: 60%;
-                           margin: 5% 3%;
-                           font-size: 55px;
-                       }
-                       .c-img2 {
-                           position: relative;
-                           width: 100%;
-                           .c-EatIn {
-                               position: relative;
-                               max-width: 100%;
-                               height: auto;
-                               width/***/
-                               : auto;
-                           }
-                           & p {
-                               display: inline-block;
-                               top: 0%;
-                               left: 10%;
-                               font-size: 55px;
-                               position: absolute;
-                               color: #FFF7EF;
-                               font-family: Roboto;
-                               &::before {
-                                   content: "";
-                                   display: inline-block;
-                                   width: 60px;
-                                   height: 5px;
-                                   background-color: #FFFFFF;
-                                   position: absolute;
-                                   top: 50px;
-                               }
-                           }
-                           .c-eat-img {
-                               position: absolute;
-                               top: 45%;
-                               width: 100%;
-                               height: 25%;
-                               .c-eat1 {
-                                   display: block;
-                                   margin-left: auto;
-                                   margin-right: auto;
-                                   width: 95%;
-                                   height: 100%;
-                                   background-color: #FFFFFF;
-                                   span {
-                                       padding: 20px;
-                                       display: inline-block;
-                                       font-size: 20px;
-                                   }
-                                   p {
-                                       font-size: 15px;
-                                       color: black;
-                                       text-align: center;
-                                   }
-                               }
-                               .c-eat2 {
-                                   display: block;
-                                   margin-top: 5%;
-                                   margin-left: auto;
-                                   margin-right: auto;
-                                   width: 95%;
-                                   height: 100%;
-                                   background-color: #FFFFFF;
-                                   span {
-                                       padding: 20px;
-                                       display: inline-block;
-                                       font-size: 20px;
-                                   }
-                                   p {
-                                       display: inline-block;
-                                       font-size: 15px;
-                                       text-align: center;
-                                   }
-                               }
-                           }
-                       }
-                   }
-               }
-           }
-       }
-       .c-example {
-           width: 100%;
-           position: relative;
-           line-height: 0;
-           @include tab {
-               width: 100%;
-           }
-           .c-blok {
-               position: absolute;
-               display: block;
-               width: 60%;
-               background: rgba(66, 64, 64, 0.5);
-               top: 0;
-               left: 0;
-               right: 0;
-               bottom: 0;
-               z-index: 5;
-               @include tab {
-                   width: 100%;
-               }
-               span {
-                   position: absolute;
-                   top: 15%;
-                   left: 70px;
-                   font-size: 1.5em;
-                   font-weight: bold;
-                   color: #FFF7EF;
-                   @include tab {
-                       top: 40px;
-                   }
-               }
-               .text {
-                   position: absolute;
-                   top: 10%;
-                   width: 90%;
-                   height: 45%;
-                   p {
-                       position: absolute;
-                       top: 70px;
-                       left: 70px;
-                       display: inline-block;
-                       line-height: 1.5em;
-                       color: #FFFFFF;
-                       font-size: 10px;
-                       font-weight: bold;
-                       line-height: 1.5rem;
-                       @include tab {
-                           top: 35%;
-                           width: 90%;
-                       }
-                   }
-               }
-           }
-           .c-sample4 {
-               width: 100%;
-               background-color: black;
-               position: relative;
-               @include tab {
-                   width: 100%;
-               }
-           }
-           &::before {
-               content: "";
-               display: block;
-               width: 60px;
-               height: 1px;
-               background-color: #FFFFFF;
-               position: absolute;
-               left: 70px;
-               top: 25%;
-               z-index: 10;
-           }
-       }
-   }
+.c-module {
+    position: relative;
+    display: flex;
+    width: 100%;
+    .l-main {
+        width: 80%;
+        @include tab {
+            width: 100%;
+        }
+        .c-sample {
+            width: 100%;
+            @include tab {
+                width: 100%;
+            }
+        }
+        .c-image {
+            position: relative;
+            line-height: 0;
+            &::before {
+                content: "ダミーサイト";
+                position: absolute;
+                top: 40%;
+                left: 40px;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #FFF7EF;
+                @include tab {
+                    font-size: 36px;
+                }
+            }
+        }
+        .c-img-list {
+            line-height: 0;
+            @include tab {}
+            .c-flex {
+                display: flex;
+                .c-img-left {
+                    width: 55%;
+                    position: relative;
+                    margin: 5% 2% 5% 2%;
+                    @include tab {
+                        width: 60%;
+                        font-size: 55px;
+                        margin: 5% 3%;
+                    }
+                    .c-left {
+                        .c-img {
+                            position: relative;
+                            width: 100%;
+                            .c-takeout {
+                                position: relative;
+                                max-width: 100%;
+                                height: auto;
+                                width/***/
+                                : auto;
+                            }
+                            & p {
+                                position: absolute;
+                                display: inline-block;
+                                top: 0%;
+                                left: 10%;
+                                font-size: 55px;
+                                color: #FFF7EF;
+                                font-family: Roboto;
+                                @include tab {
+                                    font-size: 55px;
+                                }
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 60px;
+                                    height: 5px;
+                                    background-color: #FFFFFF;
+                                    position: absolute;
+                                    top: 50px;
+                                }
+                            }
+                        }
+                    }
+                    .c-out-img {
+                        position: absolute;
+                        top: 55%;
+                        width: 100%;
+                        height: 20%;
+                        .c-out1 {
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 95%;
+                            height: 100%;
+                            background-color: #ffffff;
+                            background-color: rgba(247, 247, 247, 0.767);
+                            h4 {
+                                font-weight: bold;
+                                font-family: "M+ 1m";
+                                padding-left: 5px;
+                                display: inline-block;
+                                font-size: 24px;
+                            }
+                            p {
+                                margin-left: 2%;
+                                margin-right: auto;
+                                font-family: regular;
+                                font-size: 16px;
+                                line-height: 1.0;
+                            }
+                        }
+                        .c-out2 {
+                            box-sizing: border-box;
+                            display: block;
+                            margin-top: 5%;
+                            background-color: #FFFFFF;
+                            background-color: rgba(247, 247, 247, 0.767);
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 95%;
+                            height: 100%;
+                            h4 {
+                                padding-left: 5px;
+                                font-size: 24px;
+                                display: inline-block;
+                                font-weight: bold;
+                                font-family: "M+ 1m";
+                            }
+                            p {
+                                margin-left: 2%;
+                                margin-right: auto;
+                                font-family: regular;
+                                font-size: 16px;
+                                line-height: 1.0;
+                            }
+                        }
+                    }
+                }
+                .c-img-right {
+                    width: 55%;
+                    position: relative;
+                    margin: 5% 2% 5% 2%;
+                    @include tab {
+                        width: 60%;
+                        margin: 5% 3%;
+                        font-size: 55px;
+                    }
+                    .c-right {
+                        .c-img2 {
+                            position: relative;
+                            width: 100%;
+                            .c-EatIn {
+                                position: relative;
+                                max-width: 100%;
+                                height: auto;
+                                width/***/
+                                : auto;
+                            }
+                            & p {
+                                display: inline-block;
+                                top: 0%;
+                                left: 10%;
+                                font-size: 55px;
+                                position: absolute;
+                                color: #FFF7EF;
+                                font-family: Roboto;
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 60px;
+                                    height: 5px;
+                                    background-color: #FFFFFF;
+                                    position: absolute;
+                                    top: 50px;
+                                }
+                            }
+                        }
+                    }
+                    .c-eat-img {
+                        position: absolute;
+                        top: 55%;
+                        width: 100%;
+                        height: 20%;
+                        .c-eat1 {
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 95%;
+                            height: 100%;
+                            background-color: #FFFFFF;
+                            background-color: rgba(247, 247, 247, 0.767);
+                            h4 {
+                                padding-left: 5px;
+                                display: inline-block;
+                                font-size: 24px;
+                                font-weight: bold;
+                                font-family: "M+ 1m";
+                            }
+                            p {
+                                margin-left: 2%;
+                                margin-right: auto;
+                                font-family: regular;
+                                font-size: 16px;
+                                line-height: 1.0;
+                            }
+                        }
+                        .c-eat2 {
+                            display: block;
+                            margin-top: 5%;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 95%;
+                            height: 100%;
+                            background-color: #FFFFFF;
+                            background-color: rgba(247, 247, 247, 0.767);
+                            h4 {
+                                padding-left: 5px;
+                                display: inline-block;
+                                font-size: 24px;
+                                font-weight: bold;
+                                font-family: "M+ 1m";
+                            }
+                            p {
+                                margin-left: 2%;
+                                margin-right: auto;
+                                font-family: "M+ 1m";
+                                font-size: 16px;
+                                line-height: 1.0;
+                                font-weight: regular;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .c-map {
+        width: 100%;
+        position: relative;
+        line-height: 0;
+        @include tab {
+            width: 100%;
+        }
+        .c-heading {
+            position: absolute;
+            display: block;
+            width: 60%;
+            background: rgba(66, 64, 64, 0.5);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+            @include tab {
+                width: 100%;
+            }
+            span {
+                position: absolute;
+                top: 15%;
+                left: 70px;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #FFF7EF;
+                @include tab {
+                    top: 40px;
+                }
+            }
+            .text {
+                position: absolute;
+                top: 10%;
+                width: 90%;
+                height: 45%;
+                p {
+                    position: absolute;
+                    top: 70px;
+                    left: 70px;
+                    display: inline-block;
+                    line-height: 1.5em;
+                    color: #FFFFFF;
+                    font-size: 10px;
+                    font-weight: bold;
+                    line-height: 1.5rem;
+                    @include tab {
+                        top: 35%;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+        .c-sample4 {
+            width: 100%;
+            background-color: black;
+            position: relative;
+            @include tab {
+                width: 100%;
+            }
+        }
+        &::before {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 1px;
+            background-color: #FFFFFF;
+            position: absolute;
+            left: 70px;
+            top: 25%;
+            z-index: 10;
+        }
+    }
+}
