@@ -97,32 +97,49 @@ footer .l-footer-nav span p {
   }
 }
 
-.l-side .active {
-  box-sizing: border-box;
-  background-color: #F2EDE9;
-  position: absolute;
-  right: 0px;
+.l-side {
   width: 20%;
-  height: 100%;
+  background-color: #F2EDE9;
+  height: inherit;
 }
 @media (max-width: 834px) {
-  .l-side .active {
+  .l-side {
+    box-sizing: border-box;
+    background-color: #F2EDE9;
+    position: absolute;
+    right: 0px;
+    width: 30%;
+    height: 100%;
+    z-index: 999;
+  }
+  .l-side.active {
+    left: 0;
     display: none;
   }
 }
-.l-side .active .l-menu {
+.l-side .l-menu {
   color: #707070;
   font-weight: normal;
   padding: 30px 0 40px 30px;
 }
-.l-side .active .l-menu h2 {
+@media (max-width: 834px) {
+  .l-side .l-menu {
+    padding-top: 150px;
+  }
+}
+.l-side .l-menu h2 {
   margin: 0;
   padding: 50px 0px 40px 0px;
 }
-.l-side .active .l-menu ul {
+@media (max-width: 834px) {
+  .l-side .l-menu h2 {
+    display: none;
+  }
+}
+.l-side .l-menu ul {
   padding: 10px 0 0 20px;
 }
-.l-side .active .l-menu ul li {
+.l-side .l-menu ul li {
   list-style: none;
   line-height: 35px;
 }
@@ -130,23 +147,56 @@ footer .l-footer-nav span p {
 .o-button {
   display: none;
 }
-
-.o-dli-close {
-  display: none;
-}
-
 @media (max-width: 834px) {
   .o-button {
     display: block;
     position: absolute;
     top: 10px;
-    right: 30px;
+    right: 20px;
     font-family: Roboto;
     font-weight: bold;
     font-size: 34px;
     color: #707070;
   }
 }
+
+.o-dli-close {
+  display: none;
+}
+@media (max-width: 834px) {
+  .o-dli-close {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    top: 10px;
+    left: 77%;
+    line-height: 1;
+    width: 1.5em;
+    height: 0.2em;
+    background: currentColor;
+    border-radius: 0.1em;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 20;
+    color: #707070;
+  }
+  .o-dli-close::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transform: rotate(90deg);
+    z-index: 20;
+  }
+  .o-dli-close.active {
+    display: none;
+  }
+}
+
 .c-module {
   position: relative;
   display: flex;
