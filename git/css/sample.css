@@ -160,9 +160,6 @@ footer .l-footer-nav span p {
   }
 }
 
-.o-dli-close {
-  display: none;
-}
 @media (max-width: 834px) {
   .o-dli-close {
     display: inline-block;
@@ -192,7 +189,7 @@ footer .l-footer-nav span p {
     transform: rotate(90deg);
     z-index: 20;
   }
-  .o-dli-close.active {
+  .o-dli-close.one {
     display: none;
   }
 }
