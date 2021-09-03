@@ -3,45 +3,11 @@
     @include tab {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 20px;
         right: 20px;
         font-family: Roboto;
         font-weight: bold;
         font-size: 34px;
         color: #707070;
-    }
-}
-
-.o-dli-close {
-    @include tab {
-        display: inline-block;
-        vertical-align: middle;
-        color: #333;
-        top: 10px;
-        left: 77%;
-        line-height: 1;
-        width: 1.5em;
-        height: 0.2em;
-        background: currentColor;
-        border-radius: 0.1em;
-        position: relative;
-        transform: rotate(45deg);
-        z-index: 20;
-        color: #707070;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: inherit;
-            border-radius: inherit;
-            transform: rotate(90deg);
-            z-index: 20;
-        }
-        &.one {
-            display: none;
-        }
     }
 }

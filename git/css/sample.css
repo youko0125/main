@@ -110,17 +110,52 @@ footer .l-footer-nav span p {
     right: 0px;
     width: 30%;
     height: 100%;
-    z-index: 999;
+    z-index: 90;
   }
   .l-side.active {
-    left: 0;
     display: none;
+  }
+}
+.l-side .o-dli-close.open {
+  display: none;
+}
+.l-side .o-dli-close.open.active {
+  display: none;
+}
+@media (max-width: 834px) {
+  .l-side .o-dli-close {
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    top: 20px;
+    left: 77%;
+    line-height: 1;
+    width: 1.5em;
+    height: 0.2em;
+    background: currentColor;
+    border-radius: 0.1em;
+    position: relative;
+    transform: rotate(45deg);
+    z-index: 999;
+    color: #707070;
+  }
+  .l-side .o-dli-close::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transform: rotate(90deg);
+    z-index: 999;
   }
 }
 .l-side .l-menu {
   color: #707070;
   font-weight: normal;
-  padding: 30px 0 40px 30px;
+  padding: 0px 0 40px 30px;
 }
 @media (max-width: 834px) {
   .l-side .l-menu {
@@ -137,7 +172,7 @@ footer .l-footer-nav span p {
   }
 }
 .l-side .l-menu ul {
-  padding: 10px 0 0 20px;
+  padding: 0px 0 0 20px;
 }
 .l-side .l-menu ul li {
   list-style: none;
@@ -151,46 +186,12 @@ footer .l-footer-nav span p {
   .o-button {
     display: block;
     position: absolute;
-    top: 10px;
+    top: 20px;
     right: 20px;
     font-family: Roboto;
     font-weight: bold;
     font-size: 34px;
     color: #707070;
-  }
-}
-
-@media (max-width: 834px) {
-  .o-dli-close {
-    display: inline-block;
-    vertical-align: middle;
-    color: #333;
-    top: 10px;
-    left: 77%;
-    line-height: 1;
-    width: 1.5em;
-    height: 0.2em;
-    background: currentColor;
-    border-radius: 0.1em;
-    position: relative;
-    transform: rotate(45deg);
-    z-index: 20;
-    color: #707070;
-  }
-  .o-dli-close::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    border-radius: inherit;
-    transform: rotate(90deg);
-    z-index: 20;
-  }
-  .o-dli-close.one {
-    display: none;
   }
 }
 
