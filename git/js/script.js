@@ -1,10 +1,8 @@
 $(function() {
     $('.o-button').click(function() { // ボタンがクリックされたら
-        $('.l-side').toggleClass('active'); // ナビにクラスを付与
-        $('.o-dli-close').show();
+        $('.l-side').addClass('active'); // ナビにクラスを付与
     });
     $('.o-dli-close').click(function() {
-        $(this).toggleClass('open'); // ×にクラスを付与
-        $('.l-side').toggleClass('active')
+        $('.l-side').removeClass('active')
     });
 });

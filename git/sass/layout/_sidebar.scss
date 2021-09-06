@@ -3,15 +3,22 @@
     background-color: #F2EDE9;
     height: inherit;
     @include tab {
-        box-sizing: border-box;
-        background-color: #F2EDE9;
-        position: absolute;
-        right: 0px;
-        width: 30%;
-        height: 100%;
-        z-index: 90;
+        display: none;
         &.active {
-            display: none;
+            display: inline-block;
+            box-sizing: border-box;
+            background-color: #F2EDE9;
+            position: absolute;
+            right: 0px;
+            width: 30%;
+            height: 100%;
+            z-index: 90;
+        }
+    }
+    @include sp {
+        display: none;
+        &.active {
+            width: 50%;
         }
     }
     .o-dli-close {

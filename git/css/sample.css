@@ -58,6 +58,11 @@ footer .l-footer-nav span p {
     font-size: 32px;
   }
 }
+@media (max-width: 576px) {
+  .l-form-group .l-header-form h1 {
+    font-size: 40px;
+  }
+}
 .l-form-group .l-header-form .l-form {
   position: absolute;
   top: 50px;
@@ -68,6 +73,11 @@ footer .l-footer-nav span p {
   .l-form-group .l-header-form .l-form {
     margin: 80px 30px 20px 0;
     left: 5%;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .l-form-group .l-header-form .l-form {
     width: 100%;
   }
 }
@@ -104,6 +114,10 @@ footer .l-footer-nav span p {
 }
 @media (max-width: 834px) {
   .l-side {
+    display: none;
+  }
+  .l-side.active {
+    display: inline-block;
     box-sizing: border-box;
     background-color: #F2EDE9;
     position: absolute;
@@ -112,8 +126,13 @@ footer .l-footer-nav span p {
     height: 100%;
     z-index: 90;
   }
-  .l-side.active {
+}
+@media (max-width: 576px) {
+  .l-side {
     display: none;
+  }
+  .l-side.active {
+    width: 50%;
   }
 }
 .l-side .o-dli-close.open {
@@ -194,6 +213,11 @@ footer .l-footer-nav span p {
     color: #707070;
   }
 }
+@media (max-width: 834px) and (max-width: 576px) {
+  .o-button {
+    font-size: 20px;
+  }
+}
 
 .c-module {
   position: relative;
@@ -208,17 +232,27 @@ footer .l-footer-nav span p {
     width: 100%;
   }
 }
-.c-module .l-main .c-sample {
-  width: 100%;
-}
-@media (max-width: 834px) {
-  .c-module .l-main .c-sample {
-    width: 100%;
-  }
-}
 .c-module .l-main .c-image {
   position: relative;
   line-height: 0;
+  width: 100%;
+  height: 25vw;
+  background-image: url(image/Raisetech.png);
+  background-size: cover;
+}
+@media (max-width: 834px) {
+  .c-module .l-main .c-image {
+    width: 100%;
+    height: 35vw;
+  }
+}
+@media (max-width: 576px) {
+  .c-module .l-main .c-image {
+    width: 100%;
+    height: 60vh;
+    background-image: url(image/hamburger.png);
+    background-size: cover;
+  }
 }
 .c-module .l-main .c-image::before {
   content: "ダミーサイト";
@@ -240,6 +274,11 @@ footer .l-footer-nav span p {
 .c-module .l-main .c-img-list .c-flex {
   display: flex;
 }
+@media (max-width: 576px) {
+  .c-module .l-main .c-img-list .c-flex {
+    display: block;
+  }
+}
 .c-module .l-main .c-img-list .c-flex .c-img-left {
   width: 55%;
   position: relative;
@@ -250,6 +289,12 @@ footer .l-footer-nav span p {
     width: 60%;
     font-size: 55px;
     margin: 5% 3%;
+  }
+}
+@media (max-width: 576px) {
+  .c-module .l-main .c-img-list .c-flex .c-img-left {
+    width: 85%;
+    margin: 30px 0 10px 40px;
   }
 }
 .c-module .l-main .c-img-list .c-flex .c-img-left .c-left .c-img {
@@ -351,6 +396,12 @@ footer .l-footer-nav span p {
     font-size: 55px;
   }
 }
+@media (max-width: 576px) {
+  .c-module .l-main .c-img-list .c-flex .c-img-right {
+    width: 85%;
+    margin: 30px 0 10px 40px;
+  }
+}
 .c-module .l-main .c-img-list .c-flex .c-img-right .c-right .c-img2 {
   position: relative;
   width: 100%;
@@ -433,17 +484,22 @@ footer .l-footer-nav span p {
   line-height: 1;
   font-weight: regular;
 }
-.c-module .c-map {
+.c-module .l-main .c-map {
   width: 100%;
   position: relative;
   line-height: 0;
 }
 @media (max-width: 834px) {
-  .c-module .c-map {
+  .c-module .l-main .c-map {
     width: 100%;
   }
 }
-.c-module .c-map .c-heading {
+@media (max-width: 576px) {
+  .c-module .l-main .c-map {
+    width: 100%;
+  }
+}
+.c-module .l-main .c-map .c-heading {
   position: absolute;
   display: block;
   width: 60%;
@@ -455,11 +511,17 @@ footer .l-footer-nav span p {
   z-index: 5;
 }
 @media (max-width: 834px) {
-  .c-module .c-map .c-heading {
+  .c-module .l-main .c-map .c-heading {
     width: 100%;
   }
 }
-.c-module .c-map .c-heading span {
+@media (max-width: 576px) {
+  .c-module .l-main .c-map .c-heading {
+    width: 60%;
+    flex-wrap: wrap;
+  }
+}
+.c-module .l-main .c-map .c-heading span {
   position: absolute;
   top: 15%;
   left: 70px;
@@ -468,17 +530,17 @@ footer .l-footer-nav span p {
   color: #FFF7EF;
 }
 @media (max-width: 834px) {
-  .c-module .c-map .c-heading span {
+  .c-module .l-main .c-map .c-heading span {
     top: 40px;
   }
 }
-.c-module .c-map .c-heading .text {
+.c-module .l-main .c-map .c-heading .text {
   position: absolute;
   top: 10%;
   width: 90%;
   height: 45%;
 }
-.c-module .c-map .c-heading .text p {
+.c-module .l-main .c-map .c-heading .text p {
   position: absolute;
   top: 70px;
   left: 70px;
@@ -490,22 +552,34 @@ footer .l-footer-nav span p {
   line-height: 1.5rem;
 }
 @media (max-width: 834px) {
-  .c-module .c-map .c-heading .text p {
+  .c-module .l-main .c-map .c-heading .text p {
     top: 35%;
     width: 90%;
   }
 }
-.c-module .c-map .c-sample4 {
+@media (max-width: 576px) {
+  .c-module .l-main .c-map .c-heading .text p {
+    width: 85%;
+    left: 20%;
+  }
+}
+.c-module .l-main .c-map .c-sample4 {
   width: 100%;
   background-color: black;
   position: relative;
 }
 @media (max-width: 834px) {
-  .c-module .c-map .c-sample4 {
+  .c-module .l-main .c-map .c-sample4 {
     width: 100%;
   }
 }
-.c-module .c-map::before {
+@media (max-width: 576px) {
+  .c-module .l-main .c-map .c-sample4 {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.c-module .l-main .c-map::before {
   content: "";
   display: block;
   width: 60px;
