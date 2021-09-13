@@ -1,65 +1,70 @@
     .l-form-group {
         width: 100%;
-        left: 20px;
+        height: 27vh;
         background-color: #FFF7EF;
+        position: relative;
+        display: inline-block;
         @include tab {
-            text-align: center;
-            display: block;
             width: 100%;
-            height: 217px;
+            height: 35vh;
         }
-        .l-header-form {
-            display: flex;
+        @include tab {
+            display: inline-block;
+            width: 100%;
+        }
+        h1 {
+            position: absolute;
+            top: 30%;
+            margin-left: 20px;
+            color: #707070;
+            font-size: 40px;
             @include tab {
                 display: inline-block;
+                font-size: 40px;
+                left: 30%;
+                top: 15%;
+            }
+            @include sp {
+                font-size: 40px;
+                left: 20%;
+                top: 20%;
+            }
+        }
+        .l-form {
+            position: absolute;
+            top: 40%;
+            left: 60%;
+            width: 40%;
+            @include tab {
+                top: 60%;
+                left: 15%;
+                width: 90%;
+            }
+            @include sp {
                 width: 100%;
+                left: 10%;
             }
-            h1 {
-                margin: 40px;
-                color: #707070;
+            .l-label {
+                width: 65%;
+                height: 30px;
+                color: #F2EDE9;
+                border-radius: 7px;
                 @include tab {
-                    margin-top: 30px;
-                    margin-bottom: 60px;
-                    font-size: 32px;
-                }
-                @include sp {
-                    font-size: 40px;
+                    width: 55%;
+                    height: 46px;
                 }
             }
-            .l-form {
-                position: absolute;
-                top: 50px;
-                right: 25%;
-                width: 300px;
+            .l-qanda {
+                width: 20%;
+                height: 30px;
+                border-radius: 7px;
+                background: linear-gradient(to top, #F2EDE9, #DED8D3);
                 @include tab {
-                    margin: 80px 30px 20px 0;
-                    left: 5%;
-                    width: 100%;
-                }
-                @include sp {
-                    width: 100%;
-                }
-                .l-label {
-                    width: 65%;
-                    height: 30px;
-                    color: #F2EDE9;
-                    border-radius: 7px;
-                    @include tab {
-                        width: 55%;
-                        height: 46px;
-                    }
-                }
-                .l-qanda {
                     width: 20%;
-                    height: 30px;
-                    border-radius: 7px;
-                    background: linear-gradient(to top, #F2EDE9, #DED8D3);
-                    @include tab {
-                        width: 20%;
-                        height: 46px;
-                        display: inline-block;
-                    }
+                    height: 46px;
+                    display: inline-block;
                 }
             }
         }
+        // }
     }

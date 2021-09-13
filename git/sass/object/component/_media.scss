@@ -11,8 +11,8 @@
             position: relative;
             line-height: 0;
             width: 100%;
-            height: 25vw;
-            background-image: url(image/Raisetech.png);
+            height: 30vw;
+            background-image: url(image/hamburger.png);
             background-size: cover;
             @include tab {
                 width: 100%;
@@ -21,15 +21,16 @@
             @include sp {
                 width: 100%;
                 height: 60vh;
-                background-image: url(image/hamburger.png);
+                background-image: url(image/hamburger2.png);
+                background-position: 60% 50%;
                 background-size: cover;
             }
             &::before {
                 content: "ダミーサイト";
                 position: absolute;
-                top: 40%;
+                top: 50%;
                 left: 40px;
-                font-size: 1.5em;
+                font-size: 40px;
                 font-weight: bold;
                 color: #FFF7EF;
                 @include tab {
@@ -37,30 +38,20 @@
                 }
                 @include sp {}
             }
-            // .c-sample {
-            //     width: 100%;
-            //     @include tab {
-            //         width: 100%;
-            //         background-image: url(image/Raisetech.png);
-            //     }
-            //     @include sp {
-            //         width: 100%;
-            //         background-image: url(image/hamburger.png);
-            //     }
-            // }
         }
         .c-img-list {
             line-height: 0;
             @include tab {}
             .c-flex {
                 display: flex;
+                justify-content: center;
                 @include sp {
                     display: block;
                 }
                 .c-img-left {
                     width: 55%;
                     position: relative;
-                    margin: 5% 2% 5% 2%;
+                    margin: 5% 1% 5% 2%;
                     @include tab {
                         width: 60%;
                         font-size: 55px;
@@ -74,13 +65,9 @@
                         .c-img {
                             position: relative;
                             width: 100%;
-                            .c-takeout {
-                                position: relative;
-                                max-width: 100%;
-                                height: auto;
-                                width/***/
-                                : auto;
-                            }
+                            height: 1193px;
+                            background-image: url(image/takeout.png);
+                            background-size: contain;
                             & p {
                                 position: absolute;
                                 display: inline-block;
@@ -106,15 +93,15 @@
                     }
                     .c-out-img {
                         position: absolute;
-                        top: 55%;
+                        top: 68%;
                         width: 100%;
-                        height: 20%;
+                        height: 148px;
                         .c-out1 {
                             display: block;
                             margin-left: auto;
                             margin-right: auto;
                             width: 95%;
-                            height: 100%;
+                            height: 148px;
                             background-color: #ffffff;
                             background-color: rgba(247, 247, 247, 0.767);
                             h4 {
@@ -141,7 +128,7 @@
                             margin-left: auto;
                             margin-right: auto;
                             width: 95%;
-                            height: 100%;
+                            height: 148px;
                             h4 {
                                 padding-left: 5px;
                                 font-size: 24px;
@@ -173,16 +160,13 @@
                         margin: 30px 0 10px 40px;
                     }
                     .c-right {
+                        width: 100%;
+                        height: 1193px;
+                        background-image: url(image/EatIn.png);
+                        background-size: contain;
                         .c-img2 {
                             position: relative;
                             width: 100%;
-                            .c-EatIn {
-                                position: relative;
-                                max-width: 100%;
-                                height: auto;
-                                width/***/
-                                : auto;
-                            }
                             & p {
                                 display: inline-block;
                                 top: 0%;
@@ -205,15 +189,15 @@
                     }
                     .c-eat-img {
                         position: absolute;
-                        top: 55%;
+                        top: 68%;
                         width: 100%;
-                        height: 20%;
+                        height: 148px;
                         .c-eat1 {
                             display: block;
                             margin-left: auto;
                             margin-right: auto;
                             width: 95%;
-                            height: 100%;
+                            height: 148px;
                             background-color: #FFFFFF;
                             background-color: rgba(247, 247, 247, 0.767);
                             h4 {
@@ -229,6 +213,11 @@
                                 font-family: regular;
                                 font-size: 16px;
                                 line-height: 1.0;
+                                @include sp {
+                                    margin-left: 6%;
+                                    margin-right: 6%;
+                                    font-size: 16px;
+                                }
                             }
                         }
                         .c-eat2 {
@@ -237,7 +226,7 @@
                             margin-left: auto;
                             margin-right: auto;
                             width: 95%;
-                            height: 100%;
+                            height: 148px;
                             background-color: #FFFFFF;
                             background-color: rgba(247, 247, 247, 0.767);
                             h4 {
@@ -262,18 +251,25 @@
         }
         .c-map {
             width: 100%;
+            height: 649px;
             position: relative;
             line-height: 0;
+            background-color: black;
+            background-image: url(image/mapping.png);
+            background-size: cover;
             @include tab {
                 width: 100%;
+                height: 415px;
             }
             @include sp {
                 width: 100%;
+                height: 691px;
             }
             .c-heading {
                 position: absolute;
                 display: block;
                 width: 60%;
+                height: 649px;
                 background: rgba(66, 64, 64, 0.5);
                 top: 0;
                 left: 0;
@@ -282,71 +278,456 @@
                 z-index: 5;
                 @include tab {
                     width: 100%;
+                    height: 415px;
                 }
                 @include sp {
-                    width: 60%;
-                    flex-wrap: wrap;
+                    width: 100%;
+                    height: 415px;
+                    background: rgba(66, 64, 64, 0.5);
                 }
                 span {
                     position: absolute;
                     top: 15%;
                     left: 70px;
-                    font-size: 1.5em;
+                    font-size: 36px;
                     font-weight: bold;
                     color: #FFF7EF;
-                    @include tab {
-                        top: 40px;
-                    }
-                }
-                .text {
-                    position: absolute;
-                    top: 10%;
-                    width: 90%;
-                    height: 45%;
-                    p {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 60px;
+                        height: 1px;
+                        background-color: #FFFFFF;
                         position: absolute;
-                        top: 70px;
-                        left: 70px;
-                        display: inline-block;
-                        line-height: 1.5em;
-                        color: #FFFFFF;
-                        font-size: 10px;
-                        font-weight: bold;
-                        line-height: 1.5rem;
+                        top: 75.5px;
+                        z-index: 10;
                         @include tab {
-                            top: 35%;
-                            width: 90%;
+                            top: 40px;
                         }
                         @include sp {
-                            width: 85%;
-                            left: 20%;
+                            top: 60px;
                         }
                     }
+                    @include tab {
+                        top: 40;
+                        left: 42px;
+                    }
+                    @include sp {}
                 }
-            }
-            .c-sample4 {
-                width: 100%;
-                background-color: black;
-                position: relative;
-                @include tab {
-                    width: 100%;
+                // .text {
+                //     position: absolute;
+                //     top: 10%;
+                //     width: 90%;
+                //     height: 356px;
+                //     @include tab {
+                //         width: 763px;
+                //         height: 356px;
+                //         top: 0%;
+                //     }
+                @include sp {}
+                p {
+                    position: absolute;
+                    top: 200px;
+                    left: 70px;
+                    width: 80%;
+                    height: 356px;
+                    display: inline-block;
+                    line-height: 1.7em;
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: "M+ 1m";
+                    @include tab {
+                        top: 35%;
+                        width: 90%;
+                        left: 42px;
+                    }
+                    @include sp {
+                        line-height: 40px;
+                        width: 400px;
+                        top: 140px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-family: "M+ 1m";
+                    }
                 }
-                @include sp {
-                    width: 100%;
-                    flex-direction: column;
-                }
-            }
-            &::before {
-                content: "";
-                display: block;
-                width: 60px;
-                height: 1px;
-                background-color: #FFFFFF;
-                position: absolute;
-                left: 70px;
-                top: 25%;
-                z-index: 10;
+                // }
             }
         }
+    }
+}
+
+.c-archive-image {
+    position: relative;
+    width: 80%;
+    height: 239px;
+    background-position: right 0% top 51.5%;
+    background-size: cover;
+    background-image: url(image/archive.png);
+    &::before {
+        display: inline-block;
+        width: 100%;
+        height: 239px;
+        content: "";
+        background: transparent;
+        opacity: 0.5;
+        background: #000;
+    }
+    h1 {
+        position: relative;
+        font-weight: bold;
+        font-size: 60px;
+        font-family: Roboto;
+        color: #FFF7EF;
+        top: -75%;
+        left: 86px;
+        &::after {
+            content: "チーズバーガー";
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+        }
+    }
+}
+
+article {
+    margin-top: 60px;
+    margin-left: 60px;
+    .c-info {
+        h2 {
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 36px;
+            text-align: left;
+            color: #3c2a10;
+        }
+        p {
+            display: inline-block;
+            width: 1052px;
+            height: 71px;
+            font-family: "M+ 1m";
+            font-weight: normal;
+            font-size: 16px;
+            text-align: left;
+            color: #3c2a10;
+            line-height: 23px;
+        }
+    }
+    .c-top {
+        margin-top: 70px;
+        position: relative;
+        width: 1052px;
+        height: 471px;
+        background: #3c2b1c;
+        h3 {
+            position: absolute;
+            top: 53px;
+            left: 600px;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 36px;
+            text-align: left;
+            color: #fff;
+        }
+        span {
+            position: absolute;
+            top: 151px;
+            left: 600px;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 24px;
+            text-align: left;
+            color: #fff;
+        }
+        p {
+            display: inline-block;
+            position: absolute;
+            top: 180px;
+            left: 600px;
+            width: 400px;
+            height: 73px;
+            font-family: "M+ 1m";
+            font-weight: normal;
+            font-size: 16px;
+            text-align: left;
+            color: #fff;
+            line-height: 23px;
+        }
+        .c-button_wrapper {
+            position: absolute;
+            top: 340px;
+            left: 600px;
+            width: 292px;
+            height: 76px;
+            margin: auto 5%;
+            text-align: center;
+            line-height: 65px;
+            .button-top {
+                width: 75%;
+                height: 76px;
+                display: inline-block;
+                background: transparent;
+                background-color: #fff;
+                border-radius: 45px;
+            }
+        }
+        .c-mune-top {
+            position: absolute;
+            background-image: url(image/mune-top.png);
+            width: 550px;
+            height: 471px;
+        }
+    }
+    .c-middle {
+        margin-top: 70px;
+        position: relative;
+        width: 1052px;
+        height: 471px;
+        background: #3c2b1c;
+        h3 {
+            position: absolute;
+            top: 53px;
+            left: 600px;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 36px;
+            text-align: left;
+            color: #fff;
+        }
+        span {
+            position: absolute;
+            top: 151px;
+            left: 600px;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 24px;
+            text-align: left;
+            color: #fff;
+        }
+        p {
+            display: inline-block;
+            position: absolute;
+            top: 180px;
+            left: 600px;
+            width: 400px;
+            height: 73px;
+            font-family: "M+ 1m";
+            font-weight: normal;
+            font-size: 16px;
+            text-align: left;
+            color: #fff;
+            line-height: 23px;
+        }
+        .c-button_wrapper {
+            position: absolute;
+            top: 340px;
+            left: 600px;
+            width: 292px;
+            height: 76px;
+            margin: auto 5%;
+            text-align: center;
+            line-height: 65px;
+            .button-top {
+                width: 75%;
+                height: 76px;
+                display: inline-block;
+                background: transparent;
+                background-color: #fff;
+                border-radius: 45px;
+            }
+        }
+        .c-mune-middle {
+            position: absolute;
+            background-image: url(image/mune-top.png);
+            width: 550px;
+            height: 471px;
+        }
+    }
+    .c-bottom {
+        margin-top: 70px;
+        position: relative;
+        width: 1052px;
+        height: 471px;
+        background: #3c2b1c;
+        h3 {
+            position: absolute;
+            top: 53px;
+            left: 600px;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 36px;
+            text-align: left;
+            color: #fff;
+        }
+        span {
+            position: absolute;
+            top: 151px;
+            left: 600px;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 24px;
+            text-align: left;
+            color: #fff;
+        }
+        p {
+            display: inline-block;
+            position: absolute;
+            top: 180px;
+            left: 600px;
+            width: 400px;
+            height: 73px;
+            font-family: "M+ 1m";
+            font-weight: normal;
+            font-size: 16px;
+            text-align: left;
+            color: #fff;
+            line-height: 23px;
+        }
+        .c-button_wrapper {
+            position: absolute;
+            top: 340px;
+            left: 600px;
+            width: 292px;
+            height: 76px;
+            margin: auto 5%;
+            text-align: center;
+            line-height: 65px;
+            .button-top {
+                width: 75%;
+                height: 76px;
+                display: inline-block;
+                background: transparent;
+                background-color: #fff;
+                border-radius: 45px;
+            }
+        }
+        .c-mune-bottom {
+            position: absolute;
+            background-image: url(image/mune-top.png);
+            width: 550px;
+            height: 471px;
+        }
+    }
+}
+
+.c-single-img {
+    position: relative;
+    background-image: url(image/ham-burger-with.png);
+    width: 80%;
+    height: 500px;
+    background-position: left 0% top 50.5%;
+    background-size: cover;
+    h1 {
+        position: absolute;
+        top: 40%;
+        font-family: "M+ 1m";
+        font-weight: bold;
+        font-size: 60px;
+        text-align: left;
+        color: #fff;
+        left: 80px;
+    }
+}
+
+.container {
+    margin-top: 60px;
+    margin-left: 100px;
+    .wapper {
+        height: 551px;
+        margin-top: 0px;
+        margin-left: 0px;
+        h2 {
+            margin-bottom: 60px;
+            display: block;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 36px;
+            text-align: left;
+            color: #3c2a10;
+        }
+        p {
+            margin-bottom: 60px;
+            line-height: 23px;
+            width: 900px;
+            height: 71px;
+            display: inline-block;
+        }
+        h3 {
+            margin-bottom: 60px;
+            display: block;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 28px;
+            text-align: left;
+            color: #3c2a10;
+        }
+        h4 {
+            margin-bottom: 60px;
+            display: block;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 20px;
+            text-align: left;
+            color: #3c2a10;
+        }
+        h5 {
+            margin-bottom: 60px;
+            display: block;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 20px;
+            text-align: left;
+            color: #3c2a10;
+        }
+        h6 {
+            margin-bottom: 60px;
+            display: block;
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 20px;
+            text-align: left;
+            color: #3c2a10;
+        }
+        .c-quotes {
+            position: relative;
+            background: #f5f5f5;
+            width: 1050px;
+            height: 319px;
+            font-family: "M+ 1m";
+            font-weight: normal;
+            font-size: 16px;
+            text-align: left;
+            color: #3c2a10;
+            p {
+                display: inline-block;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                width: 900px;
+                height: 137px;
+                font-family: "M+ 1m";
+                font-weight: normal;
+                font-size: 16px;
+                text-align: left;
+                color: #3c2a10;
+            }
+            span {
+                position: absolute;
+                display: inline-block;
+                top: 280px;
+                left: 50px;
+            }
+        }
+    }
+    .related {
+        position: relative;
+        width: 1050px;
+        height: 500px;
+        background-image: url(image/picture.png);
+        background-size: cover;
     }
 }

@@ -1,5 +1,5 @@
-$pc: 1200px; // PC
-$tab: 834px; // タブレット
+$pc: 1250px; // PC
+$tab: 900px; // タブレット
 $sp: 576px; // スマホ
 @mixin pc {
     @media (max-width: ($pc)) {
