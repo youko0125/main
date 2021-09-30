@@ -1,7 +1,7 @@
 .c-module {
     position: relative;
-    display: flex;
     width: 100%;
+    display: flex;
     .l-main {
         width: 80%;
         @include tab {
@@ -63,12 +63,22 @@
         //                 margin: 30px 0 10px 40px;
         //             }
         .c-img {
-            width: 80%;
+            width: 100%;
             .c-img-left {
                 display: flex;
-                .c-single-img {
-                    flex-basis: 40%;
+                .c-sample-img {
+                    position: relative;
+                    margin: 50px 60px;
+                    width: 550px;
+                    height: 1000px;
                     .c-sample {
+                        width: 100%;
+                        height: 920px;
+                        object-fit: cover;
+                    }
+                    .c-EatIn {
+                        width: 100%;
+                        height: 920px;
                         object-fit: cover;
                     }
                     & p {
@@ -96,14 +106,17 @@
             }
             .c-out-img {
                 position: absolute;
-                width: 100%;
-                height: 148px;
+                top: 50%;
+                left: 5%;
+                width: 30%;
+                margin-left: 1%;
+                margin-right: auto;
                 .c-out1 {
                     position: absolute;
-                    margin-left: auto;
-                    margin-right: auto;
+                    // margin-left: 2%;
+                    // margin-right: auto;
                     width: 95%;
-                    height: 300px;
+                    height: 170px;
                     background-color: #ffffff;
                     background-color: rgba(247, 247, 247, 0.767);
                     h4 {
@@ -114,8 +127,12 @@
                         font-size: 24px;
                     }
                     p {
-                        margin-left: 2%;
-                        margin-right: auto;
+                        position: absolute;
+                        display: inline-block;
+                        top: 45%;
+                        left: 2%;
+                        // margin-left: 2%;
+                        // margin-right: auto;
                         font-family: regular;
                         font-size: 16px;
                         line-height: 1.0;
@@ -125,13 +142,13 @@
                     position: absolute;
                     box-sizing: border-box;
                     display: block;
-                    margin-top: 5%;
+                    margin-top: 45%;
                     background-color: #FFFFFF;
                     background-color: rgba(247, 247, 247, 0.767);
                     margin-left: auto;
                     margin-right: auto;
                     width: 95%;
-                    height: 148px;
+                    height: 170px;
                     h4 {
                         padding-left: 5px;
                         font-size: 24px;
@@ -140,225 +157,230 @@
                         font-family: "M+ 1m";
                     }
                     p {
-                        margin-left: 2%;
-                        margin-right: auto;
+                        position: absolute;
+                        display: inline-block;
+                        top: 45%;
+                        left: 2%;
+                        // margin-left: 2%;
+                        // margin-right: auto;
                         font-family: regular;
                         font-size: 16px;
                         line-height: 1.0;
                     }
                 }
             }
-            // }
         }
-    }
-    // }
-    // }
-    // .c-img-right {
-    //     position: relative;
-    //     width: 70%;
-    //     height: 1193px;
-    //     @include tab {
-    //         width: 60%;
-    //         margin: 5% 3%;
-    //         font-size: 55px;
-    //     }
-    //     @include sp {
-    //         width: 85%;
-    //         margin: 30px 0 10px 40px;
-    //     }
-    //     .c-img {
-    //         position: relative;
-    //         width: 50%;
-    //         .c-EatIn {
-    //             position: absolute;
-    //             object-fit: cover;
-    //             width: 100%;
-    //             height: auto;
-    //         }
-    //         & p {
-    //             display: inline-block;
-    //             top: 0%;
-    //             left: 10%;
-    //             font-size: 55px;
-    //             position: absolute;
-    //             color: #FFF7EF;
-    //             font-family: Roboto;
-    //             &::before {
-    //                 content: "";
-    //                 display: inline-block;
-    //                 width: 60px;
-    //                 height: 5px;
-    //                 background-color: #FFFFFF;
-    //                 position: absolute;
-    //                 top: 50px;
-    //             }
-    //         }
-    // .c-eat-img {
-    //     position: absolute;
-    //     top: 68%;
-    //     width: 100%;
-    //     height: 148px;
-    //     .c-eat1 {
-    //         display: block;
-    //         margin-left: auto;
-    //         margin-right: auto;
-    //         width: 95%;
-    //         height: 148px;
-    //         background-color: #FFFFFF;
-    //         background-color: rgba(247, 247, 247, 0.767);
-    //         h4 {
-    //             padding-left: 5px;
-    //             display: inline-block;
-    //             font-size: 24px;
-    //             font-weight: bold;
-    //             font-family: "M+ 1m";
-    //         }
-    //         p {
-    //             margin-left: 2%;
-    //             margin-right: auto;
-    //             font-family: regular;
-    //             font-size: 16px;
-    //             line-height: 1.0;
-    //             @include sp {
-    //                 margin-left: 6%;
-    //                 margin-right: 6%;
-    //                 font-size: 16px;
-    //             }
-    //         }
-    //     }
-    //     .c-eat2 {
-    //         display: block;
-    //         margin-top: 5%;
-    //         margin-left: auto;
-    //         margin-right: auto;
-    //         width: 95%;
-    //         height: 148px;
-    //         background-color: #FFFFFF;
-    //         background-color: rgba(247, 247, 247, 0.767);
-    //         h4 {
-    //             padding-left: 5px;
-    //             display: inline-block;
-    //             font-size: 24px;
-    //             font-weight: bold;
-    //             font-family: "M+ 1m";
-    //         }
-    //         p {
-    //             margin-left: 2%;
-    //             margin-right: auto;
-    //             font-family: "M+ 1m";
-    //             font-size: 16px;
-    //             line-height: 1.0;
-    //             font-weight: regular;
-    //         }
-    // }
-    // }
-    // }
-    // }
-    // }
-    // }
-    .c-map {
-        width: 100%;
-        height: 649px;
-        position: relative;
-        line-height: 0;
-        background-color: black;
-        background-image: url(image/mapping.png);
-        background-size: cover;
-        @include tab {
+        // }
+        // }
+        // }
+        // }
+        // .c-img-right {
+        //     position: relative;
+        //     width: 70%;
+        //     height: 1193px;
+        //     @include tab {
+        //         width: 60%;
+        //         margin: 5% 3%;
+        //         font-size: 55px;
+        //     }
+        //     @include sp {
+        //         width: 85%;
+        //         margin: 30px 0 10px 40px;
+        //     }
+        //     .c-img {
+        //         position: relative;
+        //         width: 50%;
+        //         .c-EatIn {
+        //             position: absolute;
+        //             object-fit: cover;
+        //             width: 100%;
+        //             height: auto;
+        //         }
+        //         & p {
+        //             display: inline-block;
+        //             top: 0%;
+        //             left: 10%;
+        //             font-size: 55px;
+        //             position: absolute;
+        //             color: #FFF7EF;
+        //             font-family: Roboto;
+        //             &::before {
+        //                 content: "";
+        //                 display: inline-block;
+        //                 width: 60px;
+        //                 height: 5px;
+        //                 background-color: #FFFFFF;
+        //                 position: absolute;
+        //                 top: 50px;
+        //             }
+        //         }
+        // .c-eat-img {
+        //     position: absolute;
+        //     top: 68%;
+        //     width: 100%;
+        //     height: 148px;
+        //     .c-eat1 {
+        //         display: block;
+        //         margin-left: auto;
+        //         margin-right: auto;
+        //         width: 95%;
+        //         height: 148px;
+        //         background-color: #FFFFFF;
+        //         background-color: rgba(247, 247, 247, 0.767);
+        //         h4 {
+        //             padding-left: 5px;
+        //             display: inline-block;
+        //             font-size: 24px;
+        //             font-weight: bold;
+        //             font-family: "M+ 1m";
+        //         }
+        //         p {
+        //             margin-left: 2%;
+        //             margin-right: auto;
+        //             font-family: regular;
+        //             font-size: 16px;
+        //             line-height: 1.0;
+        //             @include sp {
+        //                 margin-left: 6%;
+        //                 margin-right: 6%;
+        //                 font-size: 16px;
+        //             }
+        //         }
+        //     }
+        //     .c-eat2 {
+        //         display: block;
+        //         margin-top: 5%;
+        //         margin-left: auto;
+        //         margin-right: auto;
+        //         width: 95%;
+        //         height: 148px;
+        //         background-color: #FFFFFF;
+        //         background-color: rgba(247, 247, 247, 0.767);
+        //         h4 {
+        //             padding-left: 5px;
+        //             display: inline-block;
+        //             font-size: 24px;
+        //             font-weight: bold;
+        //             font-family: "M+ 1m";
+        //         }
+        //         p {
+        //             margin-left: 2%;
+        //             margin-right: auto;
+        //             font-family: "M+ 1m";
+        //             font-size: 16px;
+        //             line-height: 1.0;
+        //             font-weight: regular;
+        //         }
+        // }
+        // }
+        // }
+        // }
+        // }
+        // }
+        .c-map {
             width: 100%;
-            height: 415px;
-        }
-        @include sp {
-            width: 100%;
-            height: 691px;
-        }
-        .c-heading {
-            position: absolute;
-            display: block;
-            width: 60%;
             height: 649px;
-            background: rgba(66, 64, 64, 0.5);
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 5;
+            position: relative;
+            line-height: 0;
+            background-color: black;
+            background-image: url(image/mapping.png);
+            background-size: cover;
             @include tab {
                 width: 100%;
                 height: 415px;
             }
             @include sp {
                 width: 100%;
-                height: 415px;
+                height: 691px;
+            }
+            .c-heading {
+                position: absolute;
+                display: block;
+                width: 60%;
+                height: 649px;
                 background: rgba(66, 64, 64, 0.5);
-            }
-            span {
-                position: absolute;
-                top: 15%;
-                left: 70px;
-                font-size: 36px;
-                font-weight: bold;
-                color: #FFF7EF;
-                &::before {
-                    content: "";
-                    display: block;
-                    width: 60px;
-                    height: 1px;
-                    background-color: #FFFFFF;
-                    position: absolute;
-                    top: 75.5px;
-                    z-index: 10;
-                    @include tab {
-                        top: 40px;
-                    }
-                    @include sp {
-                        top: 60px;
-                    }
-                }
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 5;
                 @include tab {
-                    top: 40;
-                    left: 42px;
-                }
-                @include sp {}
-            }
-            // .text {
-            //     position: absolute;
-            //     top: 10%;
-            //     width: 90%;
-            //     height: 356px;
-            //     @include tab {
-            //         width: 763px;
-            //         height: 356px;
-            //         top: 0%;
-            //     }
-            @include sp {}
-            p {
-                position: absolute;
-                top: 200px;
-                left: 70px;
-                width: 80%;
-                height: 356px;
-                display: inline-block;
-                line-height: 1.7em;
-                color: #FFFFFF;
-                font-size: 16px;
-                font-weight: bold;
-                font-family: "M+ 1m";
-                @include tab {
-                    top: 35%;
-                    width: 90%;
-                    left: 42px;
+                    width: 100%;
+                    height: 415px;
                 }
                 @include sp {
-                    line-height: 40px;
-                    width: 400px;
-                    top: 140px;
-                    font-size: 14px;
+                    width: 100%;
+                    height: 415px;
+                    background: rgba(66, 64, 64, 0.5);
+                }
+                span {
+                    position: absolute;
+                    top: 15%;
+                    left: 70px;
+                    font-size: 36px;
+                    font-weight: bold;
+                    color: #FFF7EF;
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 60px;
+                        height: 1px;
+                        background-color: #FFFFFF;
+                        position: absolute;
+                        top: 75.5px;
+                        z-index: 10;
+                        @include tab {
+                            top: 40px;
+                        }
+                        @include sp {
+                            top: 60px;
+                        }
+                    }
+                    @include tab {
+                        top: 40;
+                        left: 42px;
+                    }
+                    @include sp {}
+                }
+                // .text {
+                //     position: absolute;
+                //     top: 10%;
+                //     width: 90%;
+                //     height: 356px;
+                //     @include tab {
+                //         width: 763px;
+                //         height: 356px;
+                //         top: 0%;
+                //     }
+                @include sp {}
+                p {
+                    position: absolute;
+                    top: 200px;
+                    left: 70px;
+                    width: 80%;
+                    height: 356px;
+                    display: inline-block;
+                    line-height: 1.7em;
+                    color: #FFFFFF;
+                    font-size: 16px;
                     font-weight: bold;
                     font-family: "M+ 1m";
+                    @include tab {
+                        top: 35%;
+                        width: 90%;
+                        left: 42px;
+                    }
+                    @include sp {
+                        line-height: 40px;
+                        width: 400px;
+                        top: 140px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        font-family: "M+ 1m";
+                    }
                 }
+                // }
             }
-            // }
         }
     }
 }
