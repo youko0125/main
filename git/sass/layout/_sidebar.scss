@@ -29,6 +29,7 @@
             }
         }
         @include tab {
+            cursor: pointer;
             display: inline-block;
             vertical-align: middle;
             color: #333;

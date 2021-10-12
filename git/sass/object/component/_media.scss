@@ -1,701 +1,750 @@
-                .c-module {
-                    position: relative;
-                    width: 100%;
-                    display: flex;
-                    .l-main {
-                        width: 80%;
+            .c-module {
+                position: relative;
+                width: 100%;
+                display: flex;
+                .l-main {
+                    width: 80%;
+                    @include tab {
+                        width: 100%;
+                    }
+                    .c-image {
+                        position: relative;
+                        line-height: 0;
+                        width: 100%;
+                        height: 30vw;
+                        background-image: url(image/hamburger.png);
+                        background-size: cover;
                         @include tab {
-                            width: 100%;
+                            height: 35vw;
                         }
-                        .c-image {
-                            position: relative;
-                            line-height: 0;
-                            width: 100%;
-                            height: 30vw;
-                            background-image: url(image/hamburger.png);
-                            background-size: cover;
+                        @include sp {
+                            height: 60vh;
+                            background-image: url(image/hamburger2.png);
+                            background-position: 60% 50%;
+                        }
+                        &::before {
+                            content: "ダミーサイト";
+                            position: absolute;
+                            top: 50%;
+                            left: 40px;
+                            font-size: 40px;
+                            // font-weight: bold;
+                            color: #FFF7EF;
                             @include tab {
-                                height: 35vw;
+                                font-size: 36px;
+                            }
+                        }
+                    }
+                    .c-img {
+                        width: 100%;
+                        .c-img-left {
+                            display: flex;
+                            @include tab {
+                                margin-left: 20px;
+                                margin-right: 20px;
                             }
                             @include sp {
-                                height: 60vh;
-                                background-image: url(image/hamburger2.png);
-                                background-position: 60% 50%;
+                                display: block;
                             }
-                            &::before {
-                                content: "ダミーサイト";
-                                position: absolute;
-                                top: 50%;
-                                left: 40px;
-                                font-size: 40px;
-                                font-weight: bold;
-                                color: #FFF7EF;
+                            .c-sample-img {
+                                position: relative;
+                                margin: 50px 25px;
+                                width: 570px;
+                                height: 1000px;
                                 @include tab {
-                                    font-size: 36px;
-                                }
-                            }
-                        }
-                        .c-img {
-                            width: 100%;
-                            .c-img-left {
-                                display: flex;
-                                @include sp {
-                                    display: block;
-                                }
-                                .c-sample-img {
-                                    position: relative;
-                                    margin: 50px 25px;
-                                    width: 570px;
+                                    width: 356px;
                                     height: 1000px;
-                                    @include tab {
-                                        width: 356px;
-                                        height: 1000px;
-                                    }
-                                    @include sp {
-                                        margin-top: 30px;
-                                        margin-bottom: 20px;
-                                        margin-left: auto;
-                                        margin-right: auto;
-                                        width: 450px;
-                                        height: 920px;
-                                    }
-                                    .c-sample {
-                                        width: 100%;
-                                        height: 920px;
-                                        object-fit: cover;
-                                        @include tab {}
-                                    }
-                                    &>p {
-                                        position: absolute;
-                                        display: inline-block;
-                                        top: 2%;
-                                        left: 10%;
-                                        font-size: 55px;
-                                        color: #FFF7EF;
-                                        font-family: Roboto;
-                                        @include tab {
-                                            font-size: 44px;
-                                        }
-                                        &::before {
-                                            content: "";
-                                            display: inline-block;
-                                            width: 60px;
-                                            height: 5px;
-                                            background-color: #FFFFFF;
-                                            position: absolute;
-                                            top: 50px;
-                                        }
-                                    }
-                                    .c-out-img {
-                                        position: absolute;
-                                        top: 55%;
-                                        width: 95%;
-                                        .c-out1 {
-                                            background-color: #ffffff;
-                                            background-color: rgba(247, 247, 247, 0.767);
-                                            margin-left: 2%;
-                                            margin-right: auto;
-                                            width: 100%;
-                                            height: 22vh;
-                                            @include sp {
-                                                height: 27vh;
-                                            }
-                                            h4 {
-                                                font-weight: bold;
-                                                font-family: "M+ 1m";
-                                                padding-left: 5px;
-                                                display: inline-block;
-                                                font-size: 24px;
-                                            }
-                                            .out-text {
-                                                position: absolute;
-                                                display: inline-block;
-                                                top: 40%;
-                                                left: 2%;
-                                                font-family: regular;
-                                                font-size: 16px;
-                                                line-height: 1.0;
-                                                color: #3c2a10;
-                                            }
-                                        }
-                                        .c-out2 {
-                                            position: absolute;
-                                            box-sizing: border-box;
-                                            background-color: #FFFFFF;
-                                            background-color: rgba(247, 247, 247, 0.767);
-                                            margin-left: 2%;
-                                            margin-right: auto;
-                                            margin-top: 17px;
-                                            width: 100%;
-                                            height: 22vh;
-                                            @include sp {
-                                                margin-top: 20px;
-                                                height: 27vh;
-                                            }
-                                            h4 {
-                                                padding-left: 5px;
-                                                font-size: 24px;
-                                                display: inline-block;
-                                                font-weight: bold;
-                                                font-family: "M+ 1m";
-                                            }
-                                            .out-text {
-                                                position: absolute;
-                                                display: inline-block;
-                                                top: 40%;
-                                                left: 2%;
-                                                font-family: regular;
-                                                font-size: 16px;
-                                                line-height: 1.0;
-                                                color: #3c2a10;
-                                            }
-                                        }
-                                    }
                                 }
-                                .c-EatIn {
+                                @include sp {
+                                    margin-top: 30px;
+                                    margin-bottom: 20px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    width: 450px;
+                                    height: 920px;
+                                }
+                                .c-sample {
                                     width: 100%;
                                     height: 920px;
                                     object-fit: cover;
+                                    @include tab {}
                                 }
-                            }
-                        }
-                        .c-map {
-                            width: 100%;
-                            height: 649px;
-                            position: relative;
-                            line-height: 0;
-                            background-color: black;
-                            background-image: url(image/mapping.png);
-                            background-size: cover;
-                            @include tab {
-                                height: 415px;
-                            }
-                            @include sp {
-                                height: 691px;
-                            }
-                            .c-heading {
-                                position: absolute;
-                                display: block;
-                                width: 60%;
-                                height: 649px;
-                                background: rgba(66, 64, 64, 0.5);
-                                top: 0;
-                                left: 0;
-                                right: 0;
-                                bottom: 0;
-                                z-index: 5;
-                                @include tab {
-                                    width: 100%;
-                                    height: 415px;
-                                }
-                                span {
+                                &>p {
                                     position: absolute;
-                                    top: 15%;
-                                    left: 70px;
-                                    font-size: 36px;
-                                    font-weight: bold;
+                                    display: inline-block;
+                                    top: 2%;
+                                    left: 10%;
+                                    font-size: 55px;
                                     color: #FFF7EF;
+                                    font-family: Roboto;
+                                    @include tab {
+                                        font-size: 44px;
+                                    }
                                     &::before {
                                         content: "";
-                                        display: block;
+                                        display: inline-block;
                                         width: 60px;
-                                        height: 1px;
+                                        height: 5px;
                                         background-color: #FFFFFF;
                                         position: absolute;
-                                        top: 75.5px;
-                                        z-index: 10;
-                                        @include tab {
-                                            top: 40px;
-                                        }
-                                        @include sp {
-                                            top: 60px;
-                                        }
-                                    }
-                                    @include tab {
-                                        top: 40;
-                                        left: 42px;
+                                        top: 50px;
                                     }
                                 }
-                                p {
+                                .c-out-img {
                                     position: absolute;
-                                    top: 200px;
-                                    left: 70px;
-                                    width: 80%;
-                                    height: 356px;
-                                    display: inline-block;
-                                    line-height: 1.7em;
-                                    color: #FFFFFF;
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                    font-family: "M+ 1m";
-                                    @include tab {
-                                        top: 25%;
-                                        width: 90%;
-                                        left: 42px;
+                                    top: 55%;
+                                    width: 95%;
+                                    .c-out1 {
+                                        background-color: #ffffff;
+                                        background-color: rgba(247, 247, 247, 0.767);
+                                        margin-left: 2%;
+                                        margin-right: auto;
+                                        width: 100%;
+                                        height: 22vh;
+                                        @include sp {
+                                            height: 27vh;
+                                        }
+                                        h4 {
+                                            // font-weight: bold;
+                                            font-family: "M+ 1m";
+                                            padding-left: 5px;
+                                            display: inline-block;
+                                            font-size: 24px;
+                                        }
+                                        .out-text {
+                                            position: absolute;
+                                            display: inline-block;
+                                            top: 40%;
+                                            left: 2%;
+                                            font-family: regular;
+                                            font-size: 16px;
+                                            line-height: 1.0;
+                                            color: #3c2a10;
+                                        }
                                     }
-                                    @include sp {
-                                        line-height: 40px;
-                                        width: 400px;
-                                        top: 140px;
-                                        font-size: 14px;
+                                    .c-out2 {
+                                        position: absolute;
+                                        box-sizing: border-box;
+                                        background-color: #FFFFFF;
+                                        background-color: rgba(247, 247, 247, 0.767);
+                                        margin-left: 2%;
+                                        margin-right: auto;
+                                        margin-top: 17px;
+                                        width: 100%;
+                                        height: 22vh;
+                                        @include sp {
+                                            margin-top: 20px;
+                                            height: 27vh;
+                                        }
+                                        h4 {
+                                            padding-left: 5px;
+                                            font-size: 24px;
+                                            display: inline-block;
+                                            // font-weight: bold;
+                                            font-family: "M+ 1m";
+                                        }
+                                        .out-text {
+                                            position: absolute;
+                                            display: inline-block;
+                                            top: 40%;
+                                            left: 2%;
+                                            font-family: regular;
+                                            font-size: 16px;
+                                            line-height: 1.0;
+                                            color: #3c2a10;
+                                        }
                                     }
                                 }
-                                // }
+                            }
+                            .c-EatIn {
+                                width: 100%;
+                                height: 920px;
+                                object-fit: cover;
                             }
                         }
                     }
-                }
-                
-                .c-archive-image {
-                    position: relative;
-                    width: 100%;
-                    height: 239px;
-                    background-position: right 0% top 51.5%;
-                    background-size: cover;
-                    background-image: url(image/archive.png);
-                    @include tab {
+                    .c-map {
                         width: 100%;
-                        height: 239px;
-                    }
-                    &::before {
-                        display: inline-block;
-                        width: 100%;
-                        height: 239px;
-                        content: "";
-                        background: transparent;
-                        opacity: 0.5;
-                        background: #000;
-                    }
-                    h1 {
+                        height: 649px;
                         position: relative;
-                        font-weight: bold;
-                        font-size: 60px;
-                        font-family: Roboto;
-                        color: #FFF7EF;
-                        top: -75%;
-                        left: 86px;
-                        &::after {
-                            content: "チーズバーガー";
-                            font-family: "M+ 1m";
-                            font-weight: bold;
-                            font-size: 16px;
-                            color: #fff;
-                            display: inline-block;
-                            position: absolute;
-                            top: 10px;
-                        }
-                    }
-                }
-                
-                article {
-                    margin-right: 40px;
-                    margin-top: 60px;
-                    margin-left: 40px;
-                    color: #3c2a10;
-                    font-family: "M+ 1m";
-                    font-weight: bold;
-                    height: 450vh;
-                    @include tab {
-                        margin-left: 35px;
-                    }
-                    .c-info {
-                        h2 {
-                            font-size: 36px;
-                            text-align: left;
-                        }
-                        p {
-                            display: inline-block;
-                            width: 100%;
-                            height: 71px;
-                            font-weight: normal;
-                            font-size: 16px;
-                            text-align: left;
-                            line-height: 23px;
-                            @include tab {
-                                width: 95%;
-                                height: 100px;
-                            }
-                        }
-                    }
-                    .c-top {
-                        background-color: #3c2a10;
-                        margin-top: 70px;
-                        position: relative;
-                        width: 100%;
-                        height: 70vh;
-                        text-align: right;
+                        line-height: 0;
+                        background-color: black;
+                        background-image: url(image/mapping.png);
+                        background-size: cover;
                         @include tab {
-                            width: 95%;
-                            height: 70vh;
+                            height: 415px;
                         }
                         @include sp {
-                            width: 95%;
-                            height: 110vh;
-                            text-align: center;
+                            height: 691px;
                         }
-                        .c-food {
+                        .c-heading {
                             position: absolute;
-                            top: 7%;
-                            left: 53%;
-                            font-size: 26px;
-                            text-align: left;
-                            color: #fff;
+                            display: block;
+                            width: 60%;
+                            height: 649px;
+                            background: rgba(66, 64, 64, 0.5);
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            z-index: 5;
                             @include tab {
-                                top: 20px;
-                                font-size: 20px;
-                            }
-                            @include sp {
-                                display: block;
-                                position: absolute;
-                                font-size: 26px;
-                                text-align: left;
-                                color: #fff;
-                                top: 50%;
-                                left: 10%;
-                            }
-                        }
-                        h3 {
-                            position: absolute;
-                            top: 7%;
-                            left: 53%;
-                            font-size: 26px;
-                            text-align: left;
-                            color: #fff;
-                            @include tab {
-                                top: 20px;
-                                font-size: 20px;
-                            }
-                            @include sp {
-                                display: none;
-                            }
-                        }
-                        h4 {
-                            display: none;
-                            @include tab {
-                                display: none;
-                            }
-                            @include sp {
-                                display: block;
-                                position: absolute;
-                                font-size: 26px;
-                                text-align: left;
-                                color: #fff;
-                                top: 50%;
-                                left: 10%;
-                            }
-                        }
-                        span {
-                            position: absolute;
-                            top: 33%;
-                            left: 53%;
-                            font-family: "M+ 1m";
-                            font-weight: bold;
-                            font-size: 20px;
-                            text-align: left;
-                            color: #fff;
-                            @include tab {
-                                top: 100px;
-                                font-size: 16px;
-                            }
-                            @include sp {
-                                left: 10%;
-                                top: 63%;
-                            }
-                        }
-                        p {
-                            display: inline-block;
-                            position: absolute;
-                            top: 38%;
-                            left: 53%;
-                            width: 40%;
-                            height: 73px;
-                            font-family: "M+ 1m";
-                            font-weight: normal;
-                            font-size: 16px;
-                            text-align: left;
-                            color: #fff;
-                            line-height: 23px;
-                            @include tab {
-                                top: 110px;
-                                font-size: 16px;
-                            }
-                            @include sp {
-                                width: 65%;
-                                height: 73px;
-                                left: 10%;
-                                top: 65%;
-                            }
-                        }
-                        .c-button_wrapper {
-                            position: absolute;
-                            top: 75%;
-                            right: 10%;
-                            width: 300px;
-                            @include tab {
-                                right: 15%;
-                            }
-                            @include sp {
-                                right: 0;
                                 width: 100%;
-                                height: 50vh;
-                                top: 88%;
+                                height: 415px;
                             }
-                            .button-top {
-                                width: 252px;
-                                height: 76px;
-                                display: inline-block;
-                                background: transparent;
-                                border-radius: 45px;
-                                background-color: #fff;
+                            span {
+                                position: absolute;
+                                top: 15%;
+                                left: 70px;
+                                font-size: 36px;
+                                // font-weight: bold;
+                                color: #FFF7EF;
+                                &::before {
+                                    content: "";
+                                    display: block;
+                                    width: 60px;
+                                    height: 1px;
+                                    background-color: #FFFFFF;
+                                    position: absolute;
+                                    top: 75.5px;
+                                    z-index: 10;
+                                    @include tab {
+                                        top: 40px;
+                                    }
+                                    @include sp {
+                                        top: 60px;
+                                    }
+                                }
                                 @include tab {
-                                    width: 163.16px;
-                                    height: 45.47px;
-                                    background: transparent;
-                                    background-color: #fff;
+                                    top: 40;
+                                    left: 42px;
                                 }
                             }
+                            p {
+                                position: absolute;
+                                top: 200px;
+                                left: 70px;
+                                width: 80%;
+                                height: 356px;
+                                display: inline-block;
+                                line-height: 1.7em;
+                                color: #FFFFFF;
+                                font-size: 16px;
+                                // font-weight: bold;
+                                font-family: "M+ 1m";
+                                @include tab {
+                                    top: 25%;
+                                    width: 90%;
+                                    left: 42px;
+                                }
+                                @include sp {
+                                    line-height: 40px;
+                                    width: 400px;
+                                    top: 140px;
+                                    font-size: 14px;
+                                }
+                            }
+                            // }
                         }
-                        .c-mune-top {
+                    }
+                }
+            }
+            
+            .c-archive-image {
+                position: relative;
+                width: 100%;
+                height: 239px;
+                background-position: right 0% top 51.5%;
+                background-size: cover;
+                background-image: url(image/archive.png);
+                @include tab {
+                    width: 100%;
+                    height: 239px;
+                }
+                &::before {
+                    display: inline-block;
+                    width: 100%;
+                    height: 239px;
+                    content: "";
+                    background: transparent;
+                    opacity: 0.5;
+                    background: #000;
+                }
+                h1 {
+                    position: relative;
+                    font-size: 60px;
+                    font-family: Roboto;
+                    color: #FFF7EF;
+                    top: -75%;
+                    left: 86px;
+                    &::after {
+                        content: "チーズバーガー";
+                        font-size: 16px;
+                        color: #fff;
+                        display: inline-block;
+                        position: absolute;
+                        top: 10px;
+                    }
+                }
+            }
+            
+            article {
+                margin-top: 60px;
+                margin-left: 25px;
+                color: #3c2a10;
+                @include tab {
+                    // margin-left: 35px;
+                }
+                @include sp {
+                    // margin-left: 30px;
+                    // margin-right: 30px;
+                }
+                .c-info {
+                    h2 {
+                        font-size: 36px;
+                        text-align: left;
+                    }
+                    p {
+                        display: inline-block;
+                        width: 100%;
+                        height: 71px;
+                        font-weight: normal;
+                        font-size: 16px;
+                        text-align: left;
+                        line-height: 23px;
+                        @include tab {
+                            width: 95%;
+                            height: 100px;
+                        }
+                    }
+                }
+                .c-top {
+                    background-color: #3c2a10;
+                    margin-top: 70px;
+                    position: relative;
+                    width: 100%;
+                    height: 70vh;
+                    text-align: right;
+                    @include tab {
+                        width: 95%;
+                        height: 70vh;
+                    }
+                    @include sp {
+                        width: 95%;
+                        height: 110vh;
+                        text-align: center;
+                    }
+                    .c-food {
+                        position: absolute;
+                        top: 7%;
+                        left: 53%;
+                        font-size: 26px;
+                        text-align: left;
+                        color: #fff;
+                        @include tab {
+                            top: 20px;
+                            font-size: 20px;
+                        }
+                        @include sp {
+                            display: block;
                             position: absolute;
-                            background-image: url(image/mune-top.png);
-                            width: 50%;
-                            height: 70vh;
-                            background-size: cover;
+                            font-size: 26px;
+                            text-align: left;
+                            color: #fff;
+                            top: 50%;
+                            left: 10%;
+                        }
+                    }
+                    h3 {
+                        position: absolute;
+                        top: 7%;
+                        left: 53%;
+                        font-size: 26px;
+                        text-align: left;
+                        color: #fff;
+                        @include tab {
+                            top: 20px;
+                            font-size: 20px;
+                        }
+                        @include sp {
+                            display: none;
+                        }
+                    }
+                    h4 {
+                        display: none;
+                        @include tab {
+                            display: none;
+                        }
+                        @include sp {
+                            display: block;
+                            position: absolute;
+                            font-size: 26px;
+                            text-align: left;
+                            color: #fff;
+                            top: 50%;
+                            left: 10%;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        top: 33%;
+                        left: 53%;
+                        font-size: 20px;
+                        text-align: left;
+                        color: #fff;
+                        @include tab {
+                            top: 100px;
+                            font-size: 16px;
+                        }
+                        @include sp {
+                            left: 10%;
+                            top: 63%;
+                        }
+                    }
+                    p {
+                        display: inline-block;
+                        position: absolute;
+                        top: 38%;
+                        left: 53%;
+                        width: 40%;
+                        height: 73px;
+                        font-weight: normal;
+                        font-size: 16px;
+                        text-align: left;
+                        color: #fff;
+                        line-height: 23px;
+                        @include tab {
+                            top: 110px;
+                            font-size: 16px;
+                        }
+                        @include sp {
+                            width: 65%;
+                            height: 73px;
+                            left: 10%;
+                            top: 65%;
+                        }
+                    }
+                    .c-button_wrapper {
+                        position: absolute;
+                        top: 75%;
+                        right: 10%;
+                        width: 300px;
+                        @include tab {
+                            right: 15%;
+                        }
+                        @include sp {
+                            right: 0;
+                            width: 100%;
+                            height: 50vh;
+                            top: 88%;
+                        }
+                        .button-top {
+                            width: 252px;
+                            height: 76px;
+                            display: inline-block;
+                            background: transparent;
+                            border-radius: 45px;
+                            background-color: #fff;
+                            @include tab {
+                                width: 163.16px;
+                                height: 45.47px;
+                                background: transparent;
+                                background-color: #fff;
+                            }
+                        }
+                    }
+                    .c-mune-top {
+                        position: absolute;
+                        background-image: url(image/mune-top.png);
+                        width: 50%;
+                        height: 70vh;
+                        background-size: cover;
+                        @include sp {
+                            width: 100%;
+                            height: 50vh;
+                        }
+                    }
+                }
+            }
+            
+            .example-wapper {
+                margin-top: 8em;
+                margin-bottom: 4em;
+                text-align: center;
+                @include sp {
+                    margin-top: 6em;
+                    margin-bottom: 1em;
+                }
+                .example {
+                    display: inline-block;
+                    padding: 2%;
+                    @include tab {
+                        margin-left: -8%;
+                    }
+                    ul {
+                        .example-list {
+                            // display: inline-block;
+                            list-style-type: none;
+                            font-family: Roboto;
+                            font-size: 16px;
+                            text-align: left;
+                            color: #707070;
+                            background: transparent;
+                            border: none;
+                        }
+                        .page1 {
+                            margin: 0;
+                            padding: 0;
+                            background: transparent;
+                            border: none;
+                        }
+                        .sp {
+                            display: none;
                             @include sp {
-                                width: 100%;
-                                height: 50vh;
+                                width: 334.53px;
+                                height: 22px;
+                                background: transparent;
+                            }
+                        }
+                        li {
+                            display: inline;
+                            background: #3c2b1c;
+                            color: #707070;
+                            padding: 9px 14px;
+                            margin-left: 4px;
+                            margin-right: 2px;
+                            background: #fff;
+                            border: 1px solid #707070;
+                            font-size: 16;
+                            background: transparent;
+                            @include tab {
+                                padding: 7px 12px;
+                            }
+                            @include sp {
+                                display: none;
+                            }
+                            &:visited {
+                                background: #fff;
+                            }
+                            &:hover {
+                                background-color: #3c2b1c;
+                                color: #fff;
                             }
                         }
                     }
                 }
-                
-                .c-single {
-                    position: relative;
-                    // width: 80%;
+            }
+            
+            .flex {
+                @include sp {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .sp {
+                    display: none;
+                    @include sp {
+                        display: block;
+                        margin-left: 5%;
+                        margin-top: -10%;
+                        margin-right: 5%;
+                        font-family: "M+ 1m";
+                        font-weight: normal;
+                        font-size: 20px;
+                        text-align: left;
+                        color: #707070;
+                    }
+                }
+            }
+            
+            .c-single {
+                position: relative;
+                // width: 80%;
+                height: 500px;
+                @include tab {
+                    width: 100%;
                     height: 500px;
+                }
+                @include sp {
+                    width: 100%;
+                    height: 225px;
+                }
+                .c-single-img {
+                    width: 100%;
+                    height: 500px;
+                    object-fit: none;
                     @include tab {
                         width: 100%;
-                        height: 500px;
                     }
                     @include sp {
                         width: 100%;
                         height: 225px;
                     }
-                    .c-single-img {
-                        width: 100%;
-                        height: 500px;
-                        object-fit: none;
-                        @include tab {
-                            width: 100%;
-                        }
-                        @include sp {
-                            width: 100%;
-                            height: 225px;
-                        }
-                    }
-                    h1 {
-                        position: absolute;
-                        top: 40%;
-                        font-family: "M+ 1m";
-                        font-weight: bold;
-                        font-size: 60px;
-                        text-align: left;
-                        color: #fff;
-                        left: 80px;
-                        @include sp {
-                            left: 40px;
-                            top: 45%;
-                            font-size: 46px;
-                        }
+                }
+                h1 {
+                    position: absolute;
+                    top: 40%;
+                    font-family: "M+ 1m";
+                    font-size: 60px;
+                    text-align: left;
+                    color: #fff;
+                    left: 80px;
+                    @include sp {
+                        left: 40px;
+                        top: 45%;
+                        font-size: 46px;
                     }
                 }
-                
-                .container {
-                    margin-top: 40px;
-                    margin-left: 35px;
-                    margin-right: 35px;
-                    font-family: "M+ 1m";
-                    font-weight: bold;
-                    color: #3c2a10;
-                    @include sp {
-                        margin-top: 10px;
-                    }
-                    .wapper {
-                        margin-left: 0px;
-                        margin-bottom: 60px;
-                        h2 {
-                            margin-bottom: 40px;
-                            display: block;
-                            font-size: 36px;
-                            text-align: left;
-                            @include sp {
-                                margin-bottom: 30px;
-                            }
-                        }
-                        p {
-                            margin-bottom: 40px;
-                            line-height: 23px;
-                            // width: 80%;
-                            height: 71px;
-                            display: inline-block;
-                            font-weight: normal;
-                            font-size: 16px;
-                            text-align: left;
-                            overflow: hidden;
-                            @include tab {
-                                width: 90%;
-                            }
-                            @include sp {
-                                height: 183px;
-                            }
-                        }
-                    }
-                    h3 {
-                        margin-bottom: 80px;
+            }
+            
+            .container {
+                margin-top: 40px;
+                margin-left: 35px;
+                margin-right: 35px;
+                font-family: "M+ 1m";
+                color: #3c2a10;
+                @include sp {
+                    margin-top: 10px;
+                }
+                .wapper {
+                    margin-left: 0px;
+                    margin-bottom: 60px;
+                    h2 {
+                        margin-bottom: 40px;
                         display: block;
-                        font-size: 28px;
-                        // text-align: left;
+                        font-size: 36px;
+                        text-align: left;
+                        @include sp {
+                            margin-bottom: 30px;
+                        }
                     }
-                    .c-quotes {
-                        position: relative;
-                        background: #f5f5f5;
+                    p {
+                        margin-bottom: 40px;
+                        line-height: 23px;
                         // width: 80%;
-                        height: 319px;
-                        font-family: "M+ 1m";
+                        height: 71px;
+                        display: inline-block;
                         font-weight: normal;
                         font-size: 16px;
-                        // text-align: left;
-                        color: #3c2a10;
+                        text-align: left;
+                        overflow: hidden;
                         @include tab {
-                            width: 100%;
-                            height: 444px;
+                            width: 90%;
                         }
                         @include sp {
-                            width: 100%;
-                            height: 617px;
-                        }
-                        p {
-                            display: inline-block;
-                            position: absolute;
-                            top: 10px;
-                            left: 25px;
-                            width: 90%;
-                            height: 137px;
-                            font-size: 16px;
-                            text-align: left;
-                            overflow: hidden;
-                            @include tab {
-                                width: 90%;
-                                height: 252px;
-                                top: 30px;
-                                left: 30px;
-                            }
-                            @include sp {
-                                top: 20px;
-                                left: 20px;
-                                width: 90%;
-                                height: 510px;
-                            }
-                        }
-                        span {
-                            position: absolute;
-                            display: inline-block;
-                            top: 280px;
-                            left: 50px;
-                            @include tab {
-                                top: 400px;
-                                left: 30px;
-                            }
-                            @include sp {
-                                top: 580px;
-                                left: 20px;
-                            }
+                            height: 183px;
                         }
                     }
                 }
-                
-                // .related-wrapper {
-                .related {
+                h3 {
+                    margin-bottom: 80px;
+                    display: block;
+                    font-size: 28px;
+                    // text-align: left;
+                }
+                .c-quotes {
                     position: relative;
-                    .img-related {
-                        width: 100%;
-                        height: 400px;
-                        background-size: cover;
-                        @include tab {
-                            width: 100%;
-                            height: 264px;
-                        }
-                    }
-                }
-                
-                .c-post-wrapper {
-                    margin-top: 5%;
-                    width: 100%;
-                    height: 270px;
-                    @include sp {
-                        width: 100%;
-                        height: 160px;
-                        margin-top: 30px;
-                    }
-                    .c-post {
-                        display: flex;
-                        width: 100%;
-                        position: relative;
-                        .c-post-img {
-                            display: inline-block;
-                            background-size: cover;
-                            width: 50%;
-                            height: auto;
-                            border: 1px solid #707070;
-                            @include tab {
-                                width: 306px;
-                                height: 189px;
-                            }
-                            @include sp {
-                                width: 146px;
-                                height: 89px;
-                            }
-                        }
-                        .c-text {
-                            margin-top: 0;
-                            margin-left: 20px;
-                            display: inline-block;
-                            width: 50%;
-                            height: 191px;
-                            font-family: "M+ 1m";
-                            font-weight: normal;
-                            font-size: 16px;
-                            color: #3c2a10;
-                            line-height: 23px;
-                            @include tab {
-                                width: 60%;
-                                height: 370px;
-                                overflow: hidden;
-                            }
-                            @include sp {
-                                width: 337px;
-                                height: 164px;
-                                overflow: hidden;
-                            }
-                        }
-                    }
-                }
-                
-                .c-text-wrapper {
-                    margin-top: 7%;
-                    width: 100%;
-                    height: 350px;
+                    background: #f5f5f5;
+                    // width: 80%;
+                    height: 319px;
+                    font-family: "M+ 1m";
+                    font-weight: normal;
+                    font-size: 16px;
+                    // text-align: left;
+                    color: #3c2a10;
                     @include tab {
-                        margin-top: 20%;
+                        width: 100%;
+                        height: 444px;
                     }
                     @include sp {
                         width: 100%;
-                        height: 160px;
-                        margin-top: 30px;
+                        height: 617px;
                     }
-                    .c-text-left {
+                    p {
+                        display: inline-block;
+                        position: absolute;
+                        top: 10px;
+                        left: 25px;
+                        width: 90%;
+                        height: 137px;
+                        font-size: 16px;
+                        text-align: left;
+                        overflow: hidden;
+                        @include tab {
+                            width: 90%;
+                            height: 252px;
+                            top: 30px;
+                            left: 30px;
+                        }
+                        @include sp {
+                            top: 20px;
+                            left: 20px;
+                            width: 90%;
+                            height: 510px;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        display: inline-block;
+                        top: 280px;
+                        left: 50px;
+                        @include tab {
+                            top: 400px;
+                            left: 30px;
+                        }
+                        @include sp {
+                            top: 580px;
+                            left: 20px;
+                        }
+                    }
+                }
+            }
+            
+            // .related-wrapper {
+            .related {
+                position: relative;
+                .img-related {
+                    width: 100%;
+                    height: 400px;
+                    background-size: cover;
+                    @include tab {
+                        width: 100%;
+                        height: 264px;
+                    }
+                }
+            }
+            
+            .c-post-wrapper {
+                margin-top: 5%;
+                width: 100%;
+                height: 270px;
+                @include sp {
+                    width: 100%;
+                    height: 160px;
+                    margin-top: 30px;
+                }
+                .c-post {
+                    display: flex;
+                    width: 100%;
+                    position: relative;
+                    .c-post-img {
+                        display: inline-block;
+                        background-size: cover;
+                        width: 50%;
+                        height: auto;
+                        border: 1px solid #707070;
+                        @include tab {
+                            width: 306px;
+                            height: 189px;
+                        }
+                        @include sp {
+                            width: 146px;
+                            height: 89px;
+                        }
+                    }
+                    .c-text {
                         margin-top: 0;
-                        display: block;
+                        margin-left: 20px;
+                        display: inline-block;
                         width: 50%;
                         height: 191px;
                         font-family: "M+ 1m";
@@ -714,195 +763,231 @@
                             overflow: hidden;
                         }
                     }
-                    .c-post-right {
-                        display: flex;
-                        width: 100%;
-                        .c-post-img {
-                            margin-left: 20px;
-                            width: 50%;
-                            height: auto;
-                            border: 1px solid #707070;
-                            @include tab {
-                                width: 306px;
-                                height: 189px;
-                            }
-                            @include sp {
-                                width: 146px;
-                                height: 89px;
-                            }
-                        }
-                    }
                 }
-                
-                .c-middle-wrapper {
-                    margin-top: 5%;
+            }
+            
+            .c-text-wrapper {
+                margin-top: 7%;
+                width: 100%;
+                height: 350px;
+                @include tab {
+                    margin-top: 20%;
+                }
+                @include sp {
                     width: 100%;
-                    text-align: center;
-                    @include tab {
-                        margin-top: 15%;
-                    }
-                    @include sp {
-                        margin-top: 40px;
-                    }
-                    .c-middle {
-                        width: 100%;
-                        .c-post-img {
-                            width: 581px;
-                            height: 350px;
-                            @include tab {
-                                width: 500px;
-                            }
-                            @include sp {
-                                width: 300px;
-                                height: 166px;
-                            }
-                        }
-                    }
+                    height: 160px;
+                    margin-top: 30px;
                 }
-                
-                .c-grid-wrapper {
-                    margin-top: 60px;
-                    width: 100%;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    display: grid;
-                    gap: 10px;
-                    @include tab {
-                        width: 100%;
-                        grid-template-columns: 1fr 1fr;
-                    }
-                    @include sp {
-                        width: 349px;
-                        grid-template-columns: 1fr;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                    .c-grid {
-                        display: inline-block;
-                        border: 1px solid #707070;
-                        @include tab {
-                            display: block;
-                        }
-                        .c-post-img {
-                            width: 100%;
-                            height: 200px;
-                        }
-                    }
-                }
-                
-                .c-list-wrapper {
-                    margin-top: 60px;
-                    margin-left: 50px;
+                .c-text-left {
+                    margin-top: 0;
+                    display: block;
+                    width: 50%;
+                    height: 191px;
                     font-family: "M+ 1m";
-                    display: inline-block;
                     font-weight: normal;
                     font-size: 16px;
-                    text-align: left;
                     color: #3c2a10;
-                    .c-lists {
-                        margin-bottom: 60px;
-                        .c-list2 {
-                            margin-left: 68px;
-                            margin-top: 40px;
-                            margin-bottom: 40px;
-                        }
+                    line-height: 23px;
+                    @include tab {
+                        width: 60%;
+                        height: 370px;
+                        overflow: hidden;
                     }
-                    .c-lists2 {
-                        margin-bottom: 60px;
-                        .c-list5 {
-                            margin-left: 68px;
-                            margin-top: 40px;
-                            margin-bottom: 40px;
+                    @include sp {
+                        width: 337px;
+                        height: 164px;
+                        overflow: hidden;
+                    }
+                }
+                .c-post-right {
+                    display: flex;
+                    width: 100%;
+                    .c-post-img {
+                        margin-left: 20px;
+                        width: 50%;
+                        height: auto;
+                        border: 1px solid #707070;
+                        @include tab {
+                            width: 306px;
+                            height: 189px;
+                        }
+                        @include sp {
+                            width: 146px;
+                            height: 89px;
                         }
                     }
                 }
-                
-                .c-square-wrapper {
-                    position: relative;
+            }
+            
+            .c-middle-wrapper {
+                margin-top: 5%;
+                width: 100%;
+                text-align: center;
+                @include tab {
+                    margin-top: 15%;
+                }
+                @include sp {
+                    margin-top: 40px;
+                }
+                .c-middle {
                     width: 100%;
-                    height: 237px;
-                    background: #f5f5f5;
+                    .c-post-img {
+                        width: 581px;
+                        height: 350px;
+                        @include tab {
+                            width: 500px;
+                        }
+                        @include sp {
+                            width: 300px;
+                            height: 166px;
+                        }
+                    }
+                }
+            }
+            
+            .c-grid-wrapper {
+                margin-top: 60px;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr;
+                display: grid;
+                gap: 10px;
+                @include tab {
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr;
+                }
+                @include sp {
+                    width: 349px;
+                    grid-template-columns: 1fr;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .c-grid {
+                    display: inline-block;
+                    border: 1px solid #707070;
+                    @include tab {
+                        display: block;
+                    }
+                    .c-post-img {
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+            }
+            
+            .c-list-wrapper {
+                margin-top: 60px;
+                margin-left: 50px;
+                font-family: "M+ 1m";
+                display: inline-block;
+                font-weight: normal;
+                font-size: 16px;
+                text-align: left;
+                color: #3c2a10;
+                .c-lists {
+                    margin-bottom: 60px;
+                    .c-list2 {
+                        margin-left: 68px;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+                }
+                .c-lists2 {
+                    margin-bottom: 60px;
+                    .c-list5 {
+                        margin-left: 68px;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            
+            .c-square-wrapper {
+                position: relative;
+                width: 100%;
+                height: 237px;
+                background: #f5f5f5;
+                @include tab {
+                    width: 100%;
+                }
+                @include sp {
+                    width: 100%;
+                }
+                .c-square {
+                    display: inline-block;
+                    pre {
+                        code {
+                            width: 950px;
+                            height: 137px;
+                            font-family: "M+ 1m";
+                            font-weight: normal;
+                            font-size: 16px;
+                            // text-align: left;
+                            color: #3c2a10;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+            
+            .c-table {
+                margin-top: 60px;
+                background: transparent;
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    height: 305px;
                     @include tab {
                         width: 100%;
                     }
-                    @include sp {
-                        width: 100%;
-                    }
-                    .c-square {
-                        display: inline-block;
-                        pre {
-                            code {
-                                width: 950px;
-                                height: 137px;
-                                font-family: "M+ 1m";
-                                font-weight: normal;
-                                font-size: 16px;
-                                // text-align: left;
-                                color: #3c2a10;
-                                line-height: 23px;
-                            }
-                        }
-                    }
                 }
-                
-                .c-table {
-                    margin-top: 60px;
-                    background: transparent;
-                    table {
-                        border-collapse: collapse;
-                        width: 100%;
-                        height: 305px;
-                        @include tab {
-                            width: 100%;
-                        }
-                    }
-                    .td-table {
-                        width: 30%;
-                    }
-                    table td {
-                        border: solid 1px black;
-                    }
+                .td-table {
+                    width: 30%;
                 }
-                
-                .c-button2 {
-                    margin-top: 60px;
+                table td {
+                    border: solid 1px black;
+                }
+            }
+            
+            .c-button2 {
+                margin-top: 60px;
+                width: 429px;
+                height: 104px;
+                button {
                     width: 429px;
                     height: 104px;
-                    button {
-                        width: 429px;
-                        height: 104px;
-                        border-radius: 20px;
-                        background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
-                        border: 1px solid #707070;
-                        display: inline-block;
-                        position: absolute;
-                    }
+                    border-radius: 20px;
+                    background: linear-gradient(#f2ede9 0%, #ded8d3 100%);
+                    border: 1px solid #707070;
+                    display: inline-block;
+                    position: absolute;
                 }
-                
-                .c-heading-text {
-                    margin-top: 60px;
-                    // position: absolute;
-                    width: 100px;
-                    height: 50vh;
+            }
+            
+            .c-heading-text {
+                margin-top: 60px;
+                // position: absolute;
+                width: 100px;
+                height: 50vh;
+                font-family: "M+ 1m";
+                // font-weight: bold;
+                font-size: 16px;
+                text-align: left;
+                color: #3c2a10;
+            }
+            
+            .c-page-img {
+                position: relative;
+                width: 100%;
+                height: 450px;
+                background-size: cover;
+                h1 {
+                    position: absolute;
+                    top: 40%;
+                    left: 86px;
                     font-family: "M+ 1m";
-                    font-weight: bold;
-                    font-size: 16px;
+                    // font-weight: bold;
+                    font-size: 60px;
                     text-align: left;
-                    color: #3c2a10;
+                    color: #fff;
                 }
-                
-                .c-page-img {
-                    position: relative;
-                    width: 100%;
-                    height: 450px;
-                    background-size: cover;
-                    h1 {
-                        position: absolute;
-                        top: 40%;
-                        left: 86px;
-                        font-family: "M+ 1m";
-                        font-weight: bold;
-                        font-size: 60px;
-                        text-align: left;
-                        color: #fff;
-                    }
-                }
+            }
