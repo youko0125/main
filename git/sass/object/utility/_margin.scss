@@ -1,0 +1,15 @@
+.c-main {
+    @include tab {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &-img {
+        margin: 50px 25px;
+        @include sp {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

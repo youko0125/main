@@ -1,9 +1,11 @@
 body {
+    width: 100%;
+    height: 100%;
     background: #fffdfa;
-    font-weight: bold;
-    font-family: "M+ 1m";
     background: transparent;
-    font-family: Roboto;
+    font-family: "m+1m";
+    font-weight: "Roboto";
+    font-size: 16px;
 }
 
 h4,
@@ -13,4 +15,9 @@ h6 {
     display: block;
     font-size: 20px;
     text-align: left;
+}
+
+ul,
+li {
+    list-style-type: none;
 }

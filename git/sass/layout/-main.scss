@@ -1,0 +1,591 @@
+        .l-module {
+            position: relative;
+            display: flex;
+            .l-content {
+                width: 80%;
+                @include tab {
+                    width: 100%;
+                }
+                .l-main {
+                    .c-main {
+                        width: 100%;
+                        display: flex;
+                        @include sp {
+                            display: block;
+                        }
+                        &-img {
+                            position: relative;
+                            width: 570px;
+                            height: 950px;
+                            @include tab {
+                                width: 356px;
+                            }
+                            @include sp {
+                                width: 450px;
+                                height: 920px;
+                            }
+                            .c-sample {
+                                width: 100%;
+                                height: 920px;
+                                object-fit: cover;
+                            }
+                            &>p {
+                                position: absolute;
+                                display: inline-block;
+                                left: 5%;
+                                font-size: 55px;
+                                font-family: Roboto;
+                                font-weight: bold;
+                                color: #eaeaea;
+                                @include tab {
+                                    font-size: 44px;
+                                }
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 60px;
+                                    height: 5px;
+                                    background-color: #FFFFFF;
+                                    position: absolute;
+                                    top: 50px;
+                                }
+                            }
+                            .c-main_inner {
+                                position: absolute;
+                                top: 58%;
+                                width: 95%;
+                                .c-inner {
+                                    width: 100%;
+                                    height: 26vh;
+                                    margin-left: 2%;
+                                    margin-right: auto;
+                                    margin-top: 17px;
+                                    box-sizing: border-box;
+                                    font-family: Roboto;
+                                    position: relative;
+                                    background-color: #ffffff;
+                                    background-color: rgba(247, 247, 247, 0.767);
+                                    @include sp {
+                                        height: 27vh;
+                                    }
+                                    h4 {
+                                        padding-left: 5px;
+                                        display: inline-block;
+                                        font-size: 24px;
+                                    }
+                                    .inner-text {
+                                        width: 96%;
+                                        position: absolute;
+                                        display: inline-block;
+                                        top: 40%;
+                                        left: 2%;
+                                        line-height: 1.0;
+                                    }
+                                }
+                                .c-item {
+                                    @extend .c-inner;
+                                    @include sp {
+                                        margin-top: 20px;
+                                        height: 27vh;
+                                    }
+                                }
+                            }
+                            .c-EatIn {
+                                width: 100%;
+                                height: 920px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                .c-map {
+                    width: 100%;
+                    height: 649px;
+                    position: relative;
+                    line-height: 0;
+                    background-color: black;
+                    background-image: url(image/mapping.png);
+                    background-size: cover;
+                    @include tab {
+                        height: 415px;
+                    }
+                    @include sp {
+                        height: 691px;
+                    }
+                    &_heading {
+                        position: absolute;
+                        display: block;
+                        width: 60%;
+                        height: 649px;
+                        background: rgba(66, 64, 64, 0.5);
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 5;
+                        text-align: left;
+                        color: #fff;
+                        font-family: "M+ 1m";
+                        font-weight: bold;
+                        @include tab {
+                            width: 100%;
+                            height: 415px;
+                        }
+                        span {
+                            position: absolute;
+                            top: 15%;
+                            left: 70px;
+                            font-size: 36px;
+                            color: #FFF7EF;
+                            &::before {
+                                content: "";
+                                display: block;
+                                width: 60px;
+                                height: 1px;
+                                background-color: #FFFFFF;
+                                position: absolute;
+                                top: 75.5px;
+                                z-index: 10;
+                                @include tab {
+                                    top: 40px;
+                                }
+                                @include sp {
+                                    top: 60px;
+                                }
+                            }
+                            @include tab {
+                                top: 40;
+                                left: 42px;
+                            }
+                        }
+                        p {
+                            position: absolute;
+                            top: 200px;
+                            left: 70px;
+                            width: 80%;
+                            height: 356px;
+                            display: inline-block;
+                            line-height: 1.7em;
+                            color: #FFFFFF;
+                            @include tab {
+                                top: 25%;
+                                width: 90%;
+                                left: 42px;
+                            }
+                            @include sp {
+                                line-height: 40px;
+                                width: 400px;
+                                top: 140px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .example-wapper {
+            margin-top: 8em;
+            margin-bottom: 4em;
+            text-align: center;
+            @include sp {
+                margin-top: 6em;
+                margin-bottom: 1em;
+            }
+            .example {
+                display: inline-block;
+                padding: 2%;
+                @include tab {
+                    margin-left: -8%;
+                }
+                ul {
+                    &&-list {
+                        font-family: Roboto;
+                        text-align: left;
+                        color: #707070;
+                        background: transparent;
+                        border: none;
+                    }
+                    .page1 {
+                        margin: 0;
+                        padding: 0;
+                        background: transparent;
+                        border: none;
+                    }
+                    .sp {
+                        display: none;
+                        @include sp {
+                            width: 334.53px;
+                            height: 22px;
+                            background: transparent;
+                        }
+                    }
+                    li {
+                        display: inline;
+                        background: #3c2b1c;
+                        color: #707070;
+                        padding: 9px 14px;
+                        margin-left: 4px;
+                        margin-right: 2px;
+                        border: 1px solid #707070;
+                        background: transparent;
+                        @include tab {
+                            padding: 7px 12px;
+                        }
+                        @include sp {
+                            display: none;
+                        }
+                        &:visited {
+                            background: #fff;
+                        }
+                        &:hover {
+                            background-color: #3c2b1c;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .flex {
+            @include sp {
+                display: flex;
+                justify-content: space-between;
+            }
+            .sp {
+                display: none;
+                @include sp {
+                    display: block;
+                    margin-left: 5%;
+                    margin-top: -10%;
+                    margin-right: 5%;
+                    font-weight: normal;
+                    font-size: 20px;
+                    text-align: left;
+                    color: #707070;
+                }
+            }
+        }
+        
+        .l-content {
+            .p-content {
+                margin-top: 60px;
+                margin-left: 60px;
+                margin-right: 60px;
+                color: #3c2a10;
+                @include sp {
+                    margin-top: 10px;
+                }
+                .wapper {
+                    margin-left: 0px;
+                    margin-bottom: 60px;
+                    h2 {
+                        margin-bottom: 40px;
+                        display: block;
+                        font-size: 36px;
+                        text-align: left;
+                        @include sp {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    p {
+                        margin-bottom: 40px;
+                        line-height: 23px;
+                        height: 71px;
+                        display: inline-block;
+                        font-weight: normal;
+                        text-align: left;
+                        overflow: hidden;
+                        @include tab {
+                            width: 90%;
+                        }
+                        @include sp {
+                            height: 183px;
+                        }
+                    }
+                }
+                h3 {
+                    margin-bottom: 80px;
+                    display: block;
+                    font-size: 28px;
+                }
+                .c-quotes {
+                    position: relative;
+                    background: #f5f5f5;
+                    height: 319px;
+                    @include tab {
+                        width: 100%;
+                        height: 444px;
+                    }
+                    @include sp {
+                        width: 100%;
+                        height: 617px;
+                    }
+                    p {
+                        display: inline-block;
+                        position: absolute;
+                        top: 10px;
+                        left: 25px;
+                        width: 90%;
+                        height: 137px;
+                        text-align: left;
+                        overflow: hidden;
+                        @include tab {
+                            width: 90%;
+                            height: 252px;
+                            top: 30px;
+                            left: 30px;
+                        }
+                        @include sp {
+                            top: 20px;
+                            left: 20px;
+                            width: 90%;
+                            height: 510px;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        display: inline-block;
+                        top: 280px;
+                        left: 50px;
+                        @include tab {
+                            top: 400px;
+                            left: 30px;
+                        }
+                        @include sp {
+                            top: 580px;
+                            left: 20px;
+                        }
+                    }
+                }
+                .related {
+                    position: relative;
+                    .img-related {
+                        width: 100%;
+                        height: 400px;
+                        background-size: cover;
+                        @include tab {
+                            width: 100%;
+                            height: 264px;
+                        }
+                    }
+                }
+                .c-post-wrapper {
+                    margin-top: 5%;
+                    width: 100%;
+                    height: 270px;
+                    @include sp {
+                        width: 100%;
+                        height: 160px;
+                        margin-top: 30px;
+                    }
+                    .c-post {
+                        display: flex;
+                        width: 100%;
+                        position: relative;
+                        .c-post-img {
+                            display: inline-block;
+                            background-size: cover;
+                            width: 50%;
+                            height: auto;
+                            border: 1px solid #707070;
+                            @include tab {
+                                width: 306px;
+                                height: 189px;
+                            }
+                            @include sp {
+                                width: 146px;
+                                height: 89px;
+                            }
+                        }
+                        .c-text {
+                            margin-top: 0;
+                            margin-left: 20px;
+                            display: inline-block;
+                            width: 50%;
+                            height: 191px;
+                            line-height: 23px;
+                            @include tab {
+                                width: 60%;
+                                height: 370px;
+                                overflow: hidden;
+                            }
+                            @include sp {
+                                width: 337px;
+                                height: 164px;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+                .c-text-wrapper {
+                    margin-top: 7%;
+                    width: 100%;
+                    height: 350px;
+                    @include tab {
+                        margin-top: 20%;
+                    }
+                    @include sp {
+                        width: 100%;
+                        height: 160px;
+                        margin-top: 30px;
+                    }
+                    .c-text-left {
+                        margin-top: 0;
+                        display: block;
+                        width: 50%;
+                        height: 191px;
+                        line-height: 23px;
+                        @include tab {
+                            width: 60%;
+                            height: 370px;
+                            overflow: hidden;
+                        }
+                        @include sp {
+                            width: 337px;
+                            height: 164px;
+                            overflow: hidden;
+                        }
+                    }
+                    .c-post-right {
+                        display: flex;
+                        width: 100%;
+                        .c-post-img {
+                            margin-left: 20px;
+                            width: 50%;
+                            height: auto;
+                            border: 1px solid #707070;
+                            @include tab {
+                                width: 306px;
+                                height: 189px;
+                            }
+                            @include sp {
+                                width: 146px;
+                                height: 89px;
+                            }
+                        }
+                    }
+                }
+                .c-middle-wrapper {
+                    margin-top: 5%;
+                    width: 100%;
+                    text-align: center;
+                    @include tab {
+                        margin-top: 15%;
+                    }
+                    @include sp {
+                        margin-top: 40px;
+                    }
+                    .c-middle {
+                        width: 100%;
+                        .c-post-img {
+                            width: 581px;
+                            height: 350px;
+                            @include tab {
+                                width: 500px;
+                            }
+                            @include sp {
+                                width: 300px;
+                                height: 166px;
+                            }
+                        }
+                    }
+                }
+                .c-grid-wrapper {
+                    margin-top: 60px;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    display: grid;
+                    gap: 10px;
+                    @include tab {
+                        width: 100%;
+                        grid-template-columns: 1fr 1fr;
+                    }
+                    @include sp {
+                        width: 349px;
+                        grid-template-columns: 1fr;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .c-grid {
+                        display: inline-block;
+                        border: 1px solid #707070;
+                        @include tab {
+                            display: block;
+                        }
+                        .c-post-img {
+                            width: 100%;
+                            height: 200px;
+                        }
+                    }
+                }
+                .c-list-wrapper {
+                    margin-top: 60px;
+                    margin-left: 50px;
+                    display: inline-block;
+                    text-align: left;
+                    .c-lists {
+                        margin-bottom: 60px;
+                        .c-list2 {
+                            margin-left: 68px;
+                            margin-top: 40px;
+                            margin-bottom: 40px;
+                        }
+                    }
+                    .c-lists2 {
+                        @extend .c-lists;
+                        .c-list5 {
+                            @extend .c-list2;
+                        }
+                    }
+                }
+                .c-square-wrapper {
+                    position: relative;
+                    width: 100%;
+                    height: 237px;
+                    background: #f5f5f5;
+                    @include tab {
+                        width: 100%;
+                    }
+                    @include sp {
+                        width: 100%;
+                    }
+                    .c-square {
+                        display: inline-block;
+                        pre {
+                            code {
+                                width: 950px;
+                                height: 137px;
+                                line-height: 23px;
+                            }
+                        }
+                    }
+                }
+                .c-table {
+                    margin-top: 60px;
+                    background: transparent;
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        height: 305px;
+                        @include tab {
+                            width: 100%;
+                        }
+                    }
+                    .td-table {
+                        width: 30%;
+                    }
+                    table td {
+                        border: solid 1px black;
+                    }
+                }
+                .c-heading-text {
+                    font-size: 16px;
+                    margin-top: 60px;
+                    width: 100px;
+                    height: 50vh;
+                    text-align: left;
+                    color: #3c2a10;
+                }
+            }
+        }

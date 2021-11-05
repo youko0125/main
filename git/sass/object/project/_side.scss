@@ -1,0 +1,24 @@
+.p-side {
+    &_menu {
+        color: #707070;
+        font-weight: normal;
+        padding: 0px 0 40px 30px;
+        @include tab {
+            padding-top: 150px;
+        }
+        h2 {
+            margin: 0;
+            padding: 50px 0px 40px 0px;
+            @include tab {
+                display: none;
+            }
+        }
+        ul {
+            padding: 0px 0 0 20px;
+            li {
+                list-style: none;
+                line-height: 35px;
+            }
+        }
+    }
+}
