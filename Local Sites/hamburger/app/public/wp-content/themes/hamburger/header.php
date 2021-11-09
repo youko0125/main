@@ -7,13 +7,12 @@
     <meta name="viewport" content="Hamburger">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Hamburger</title>
-    <link rel='stylesheet' href="<?php echo get_template_directory_uri(); ?>/css/sample.css">
     <script src="https://kit.fontawesome.com/055b8d114c.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div class="l-module">
         <div class="l-content">
             <header class="l-header">

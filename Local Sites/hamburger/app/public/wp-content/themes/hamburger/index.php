@@ -41,12 +41,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div> 
     </div>
-    
     <?php get_footer(); ?> 
     <script src="js/script.js "></script>
-</body>
 <?php get_sidebar(); ?>
-</html>
