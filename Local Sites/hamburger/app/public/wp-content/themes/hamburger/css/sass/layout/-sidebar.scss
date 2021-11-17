@@ -1,0 +1,60 @@
+.l-side {
+    width: 20%;
+    height: inherit;
+    background-color: #F2EDE9;
+    @include tab {
+        display: none;
+        &.active {
+            display: inline-block;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0px;
+            width: 30%;
+            height: 100%;
+            z-index: 100;
+        }
+    }
+    @include sp {
+        display: none;
+        &.active {
+            width: 50%;
+        }
+    }
+    .o-side_button {
+        &.open {
+            display: none;
+            &.active {
+                display: none;
+            }
+        }
+        @include tab {
+            cursor: pointer;
+            display: inline-block;
+            vertical-align: middle;
+            color: #333;
+            top: 20px;
+            left: 77%;
+            line-height: 1;
+            width: 1.5em;
+            height: 0.2em;
+            background: currentColor;
+            border-radius: 0.1em;
+            position: relative;
+            transform: rotate(45deg);
+            z-index: 999;
+            color: #707070;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: inherit;
+                border-radius: inherit;
+                transform: rotate(90deg);
+                z-index: 999;
+            }
+        }
+    }
+}

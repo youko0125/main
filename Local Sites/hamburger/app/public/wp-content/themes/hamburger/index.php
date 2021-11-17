@@ -1,9 +1,8 @@
-<?php get_header(); ?>
-
+<?php get_header();?>
             <div class="c-image c-image-text"></div>
             <main class="l-main">
                 <div class="c-main">
-                    <div class="c-main-img "><img class="c-sample " src="./img/takeout.png " alt=" ">
+                    <div class="c-main-img "><img class="c-sample "src="<?php echo get_template_directory_uri();?>/css/sass/img/takeout.png"/>
                         <p>Take Out</p>
                         <div class="c-main_inner">
                             <div class="c-inner ">
@@ -16,7 +15,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="c-main-img "><img class="c-EatIn " src="./img/EatIn.png " alt=" ">
+                    <div class="c-main-img "><img class="c-EatIn "src="<?php echo get_template_directory_uri();?>/css/sass/img/EatIn.png"/>
                         <p>Eat In</p>
                         <div class="c-main_inner">
                             <div class="c-inner ">
@@ -31,7 +30,7 @@
                     </div>
                 </div>
             </main>
-            <div class="c-map ">
+            <div class="c-map">
                 <div class="c-map_heading">
                     <span>見出しが入ります</span>
                     <div class="c-map_text">
@@ -42,7 +41,7 @@
                 </div>
             </div>
         </div> 
+        <?php get_sidebar();?>
     </div>
-    <?php get_footer(); ?> 
     <script src="js/script.js "></script>
-<?php get_sidebar(); ?>
+<?php get_footer();?> 

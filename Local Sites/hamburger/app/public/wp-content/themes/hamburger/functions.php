@@ -1,10 +1,5 @@
 <?php
-   
-function add_files(){
-    wp_enqueue_style('hamburger',  get_template_directory_uri(),'/css/style.css');
-    wp_enqueue_script('my_script',get_template_directory_uri(),'/css/js/script.js');
-
+function load_import_css() {
+    wp_enqueue_style("hamburger",get_template_directory_uri()."/css/sass/style.css", false );
 }
-      
-
-add_action( 'wp_enqueue_scripts','add_files' );
+add_action('wp_enqueue_scripts', 'load_import_css');
