@@ -1355,6 +1355,7 @@ article .p-lead .c-mune-top {
     color: #707070;
     font-weight: normal;
     padding: 0px 0 40px 30px;
+    text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -1365,7 +1366,7 @@ article .p-lead .c-mune-top {
 
 .p-side_menu h2 {
     margin: 0;
-    padding: 50px 0px 40px 0px;
+    padding: 90px 0px 40px 0px;
 }
 
 @media (max-width: 900px) {
@@ -1378,9 +1379,10 @@ article .p-lead .c-mune-top {
     padding: 0px 0 0 20px;
 }
 
-.p-side_menu ul li {
+.p-side_menu ul {
     list-style: none;
     line-height: 35px;
+    text-decoration: none;
 }
 
 .p-header {
@@ -1391,6 +1393,11 @@ article .p-lead .c-mune-top {
     position: absolute;
     top: 30%;
     margin-left: 30px;
+}
+
+.p-header_title a {
+    text-decoration: none;
+    color: #707070;
 }
 
 @media (max-width: 900px) {
@@ -1412,7 +1419,7 @@ article .p-lead .c-mune-top {
     position: absolute;
     top: 38%;
     left: 60%;
-    width: 45%;
+    width: 40%;
     height: 35px;
 }
 
@@ -1420,13 +1427,13 @@ article .p-lead .c-mune-top {
     .p-header_form {
         top: 60%;
         left: 15%;
-        width: 90%;
+        width: 85%;
     }
 }
 
 @media (max-width: 576px) {
     .p-header_form {
-        width: 100%;
+        width: 85%;
         left: 10%;
     }
 }
