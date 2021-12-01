@@ -34,6 +34,3 @@ add_filter('page_css_class', 'my_css_attributes_filter', 100, 1);
 function my_css_attributes_filter($var) {
     return is_array($var) ? array_intersect($var,  array( 'menu-item' ) ) : '';
 }
-
-
-

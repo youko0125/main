@@ -43,5 +43,5 @@
         </div> 
         <?php get_sidebar();?>
     </div>
-    <script src="js/script.js "></script>
+    <!-- <script src="js/script.js "></script> -->
 <?php get_footer();?> 
