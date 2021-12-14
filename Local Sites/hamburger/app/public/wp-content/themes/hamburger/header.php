@@ -9,7 +9,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!-- <script src="static/index.js"></script> -->
     <?php if ( is_page() ): ?>
-        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sass/style.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
         <?php endif; ?>
     <?php wp_head();?>
 </head>
@@ -19,7 +19,7 @@
         <div class="l-content">
             <header class="l-header">
                 <div class="p-header">
-                <h1 class="p-header_title l-header_title_color"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                <h1 class="p-header_title l-header_title_color"><?php bloginfo('name'); ?></a></h1>
                     <div class="o-button">Menu</div>
                     <?php get_search_form(); ?>
                 </div>

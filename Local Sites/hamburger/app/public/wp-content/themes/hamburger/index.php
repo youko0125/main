@@ -2,7 +2,7 @@
             <div class="c-image c-image-text"></div>
             <main class="l-main">
                 <div class="c-main">
-                    <div class="c-main-img "><img class="c-sample "src="<?php echo get_template_directory_uri();?>/css/sass/img/takeout.png"/>
+                    <div class="c-main-img "><img class="c-sample "src="<?php echo get_template_directory_uri();?>/css/img/takeout.png"/>
                         <p>Take Out</p>
                         <div class="c-main_inner">
                             <div class="c-inner ">
@@ -15,7 +15,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="c-main-img "><img class="c-EatIn "src="<?php echo get_template_directory_uri();?>/css/sass/img/EatIn.png"/>
+                    <div class="c-main-img "><img class="c-EatIn "src="<?php echo get_template_directory_uri();?>/css/img/EatIn.png"/>
                         <p>Eat In</p>
                         <div class="c-main_inner">
                             <div class="c-inner ">

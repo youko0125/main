@@ -13,15 +13,13 @@
                     display: none;
                 }
             }
-            ul {
-                padding: 0px 0 0 10px;
-                text-decoration: none;
-                li {
+            ul#menu-side-menu {
+                padding: 20px 0 0 10px;
+                li.menu-item {
+                    color: #707070;
+                    font-weight: normal;
                     list-style: none;
                     line-height: 35px;
-                    li.menu-item {
-                        text-decoration: none;
-                    }
                 }
             }
         }

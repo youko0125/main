@@ -13,6 +13,9 @@
                          ) ); 
                    
                ?>
+                <section class="archive">
+                 <?php dynamic_sidebar('sidebar'); ?>
+                </section>
   
      
     
