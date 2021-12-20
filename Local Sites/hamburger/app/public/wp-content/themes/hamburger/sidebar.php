@@ -10,12 +10,14 @@
                         // 'container' => 'div',
                          'menu_class' => '' ,
                          'container' =>  false,
+                         'theme_location' => 'side-menu',
                          ) ); 
                    
                ?>
-                <section class="archive">
-                 <?php dynamic_sidebar('sidebar'); ?>
-                </section>
+                </div> 
+             </div>
+         </div>
+                
   
      
     
@@ -46,7 +48,5 @@
         //                 <li>紅茶（Ice/Hot）</li>
         //                 <li>コーヒー(Ice/Hot)</li>
         //             </ul>  -->
-                 </div> 
-             </div>
-         </div>
-       
+                
+      

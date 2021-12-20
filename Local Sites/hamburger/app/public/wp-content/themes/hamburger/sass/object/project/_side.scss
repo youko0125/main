@@ -1,26 +1,41 @@
-    .p-side {
-        &_menu {
-            color: #707070;
-            font-weight: normal;
-            padding: 0px 0 40px 30px;
-            @include tab {
-                padding-top: 150px;
-            }
-            h2 {
-                margin: 0;
-                padding: 50px 0px 30px 0px;
+        .p-side {
+            &_menu {
+                color: #707070;
+                font-weight: normal;
+                padding: 0px 0 40px 20px;
                 @include tab {
-                    display: none;
+                    padding-top: 150px;
                 }
-            }
-            ul#menu-side-menu {
-                padding: 20px 0 0 10px;
-                li.menu-item {
-                    color: #707070;
-                    font-weight: normal;
-                    list-style: none;
-                    line-height: 35px;
+                h2 {
+                    margin: 0 0 0 20px;
+                    padding: 100px 0px 30px 0px;
+                    font-size: 34px;
+                    @include tab {
+                        display: none;
+                    }
+                }
+                #menu-side-menu {
+                    margin-top: 70px;
+                    padding-left: 20px;
+                    line-height: 60px;
+                    a {
+                        color: #707070;
+                        font-weight: bold;
+                        font-size: 24px;
+                    }
+                    .sub-menu {
+                        padding: 20px 20px 0;
+                        li.menu-item {
+                            list-style: none;
+                        }
+                        .side-menu {
+                            font-family: "M+ 1m";
+                            font-weight: normal;
+                            font-size: 20px;
+                            text-align: left;
+                            color: #707070;
+                        }
+                    }
                 }
             }
         }
-    }
