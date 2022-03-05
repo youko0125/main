@@ -57,4 +57,24 @@
             }
         }
     }
+    .menu-item {
+        a {
+            font-family: "M+ 1m";
+            font-weight: bold;
+            font-size: 24px;
+            text-align: left;
+            color: #707070;
+            line-height: 3;
+        }
+        ul.sub-menu {
+            padding: 0 0 0 20px;
+            li.menu-item a {
+                font-family: "M+ 1m";
+                font-weight: normal;
+                font-size: 20px;
+                text-align: left;
+                color: #707070;
+            }
+        }
+    }
 }

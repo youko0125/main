@@ -2,12 +2,23 @@
 function load_import_css() {
     wp_enqueue_style("hamburger",get_template_directory_uri()."/css/style.css" , array(), null, 'all');
     wp_enqueue_script( "hamburger",get_template_directory_uri()."/js/script.js" );
-    wp_enqueue_style( 'style', get_template_directory_uri() . "/style.css", array(), '1.0.0' );
+    // wp_enqueue_style( 'style', get_template_directory_uri() . "/style.css", array(), '1.0.0' );
 }
 add_action('wp_enqueue_scripts', 'load_import_css');
 
 add_theme_support( 'menus' );
 add_theme_support( 'title-tag' );
+add_theme_support( 'post-thumbnails' );
+
+function add_thumbnail_size() {
+    add_theme_support( 'post-thumbnails',array('page') );
+    register_post_type( 'takeout',
+array(
+      'supports' => array( 'title', 'thumbnail','editor' )
+     )
+);
+    add_image_size('takeout', 500, 300, true );// 追加するサムネイル画像
+  }
 
 
 
@@ -22,14 +33,14 @@ function hamburger_title( $title ) {
 
 
 add_filter( 'pre_get_document_title', 'hamburger_title' );
-add_filter( 'body_class', 'add_page_slug_class_name' );
-function add_page_slug_class_name( $class ) {
-  if ( is_page() ) {
-    $page = get_post( get_the_ID() );
-    $class[] = $page->side;
-  }
-  return $class;
-}
+// add_filter( 'body_class', 'add_page_slug_class_name' );
+// function add_page_slug_class_name( $class ) {
+//   if ( is_page() ) {
+//     $page = get_post( get_the_ID() );
+//     $class[] = $page->side;
+//   }
+//   return $class;
+// }
 
 // aタグにclassをつける
 add_filter('walker_nav_menu_start_el', 'add_class_on_link', 10, 4);
@@ -67,6 +78,25 @@ if (function_exists('register_sidebar')) {
    ));
   }
 
+
+/*==============================
+固定ページカテゴリ追加用コード
+==============================*/
+ 
+add_action('init','add_categories_for_pages'); 
+function add_categories_for_pages(){ 
+   register_taxonomy_for_object_type('category', 'page'); 
+} 
+add_action( 'pre_get_posts', 'nobita_merge_page_categories_at_category_archive' ); 
+function nobita_merge_page_categories_at_category_archive( $query ) { 
+ 
+if ( $query->is_category== true && $query->is_main_query() ) { 
+$query->set('post_type', array( 'post', 'page', 'nav_menu_item')); 
+} 
+} 
+
+
+ 
 
 
   

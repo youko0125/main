@@ -12,15 +12,6 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: hamburger
 */
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  line-height: 0;
-  overflow: hidden;
-}
-
-body {
   width: 100%;
   height: 100%;
   background: #fffdfa;
@@ -30,6 +21,7 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  line-height: 0;
 }
 
 h4,
@@ -109,7 +101,7 @@ a {
 }
 .l-module .l-content .l-main .c-main-img .c-sample {
   width: 100%;
-  height: 960px;
+  height: 950px;
   object-fit: cover;
 }
 @media (max-width: 576px) {
@@ -821,12 +813,29 @@ a {
     z-index: 999;
   }
 }
+.l-side .menu-item a {
+  font-family: "M+ 1m";
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  color: #707070;
+  line-height: 3;
+}
+.l-side .menu-item ul.sub-menu {
+  padding: 0 0 0 20px;
+}
+.l-side .menu-item ul.sub-menu li.menu-item a {
+  font-family: "M+ 1m";
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  color: #707070;
+}
 
 .c-image {
   position: relative;
   width: 100%;
   height: 30vw;
-  background-image: url(image/hamburger.png);
   background-size: cover;
 }
 @media (max-width: 900px) {
@@ -841,8 +850,19 @@ a {
     background-position: 60% 50%;
   }
 }
-.c-image::before {
-  content: "ダミーサイト";
+.c-image h3 {
+  position: absolute;
+  top: 40%;
+  left: 40px;
+  font-size: 40px;
+  color: #FFF7EF;
+}
+@media (max-width: 900px) {
+  .c-image h3 {
+    font-size: 36px;
+  }
+}
+.c-image h3::before {
   position: absolute;
   top: 50%;
   left: 40px;
@@ -850,52 +870,51 @@ a {
   color: #FFF7EF;
 }
 @media (max-width: 900px) {
-  .c-image::before {
+  .c-image h3::before {
     font-size: 36px;
   }
 }
-
-.c-single {
+.c-image .c-single {
   position: relative;
   height: 450px;
   width: 100%;
 }
 @media (max-width: 900px) {
-  .c-single {
+  .c-image .c-single {
     width: 100%;
     height: 500px;
   }
 }
 @media (max-width: 576px) {
-  .c-single {
+  .c-image .c-single {
     width: 100%;
     height: 225px;
   }
 }
-.c-single-img {
+.c-image .c-single-img {
   width: 100%;
   height: 450px;
   object-fit: none;
   display: inline-block;
 }
 @media (max-width: 900px) {
-  .c-single-img {
+  .c-image .c-single-img {
     width: 100%;
   }
 }
 @media (max-width: 576px) {
-  .c-single-img {
+  .c-image .c-single-img {
     width: 100%;
     height: 225px;
   }
 }
-.c-single .c-page-img {
+.c-image .c-single .c-page-img {
   position: relative;
   width: 100%;
   height: 450px;
   background-size: cover;
 }
-.c-single .c-page-img h1 {
+.c-image .c-single .c-page-img h1 {
   position: absolute;
   top: 40%;
   left: 86px;
@@ -903,7 +922,7 @@ a {
   text-align: left;
   color: #fff;
 }
-.c-single h1 {
+.c-image .c-single h1 {
   position: absolute;
   top: 40%;
   font-size: 60px;
@@ -912,14 +931,13 @@ a {
   left: 80px;
 }
 @media (max-width: 576px) {
-  .c-single h1 {
+  .c-image .c-single h1 {
     left: 40px;
     top: 45%;
     font-size: 46px;
   }
 }
-
-.c-archive-image {
+.c-image .c-archive-image {
   position: relative;
   width: 100%;
   height: 239px;
@@ -928,12 +946,12 @@ a {
   background-image: url(image/archive.png);
 }
 @media (max-width: 900px) {
-  .c-archive-image {
+  .c-image .c-archive-image {
     width: 100%;
     height: 239px;
   }
 }
-.c-archive-image::before {
+.c-image .c-archive-image::before {
   display: inline-block;
   width: 100%;
   height: 239px;
@@ -942,7 +960,7 @@ a {
   opacity: 0.5;
   background: #000;
 }
-.c-archive-image h1 {
+.c-image .c-archive-image h1 {
   position: relative;
   font-size: 60px;
   font-family: Roboto;
@@ -950,7 +968,7 @@ a {
   top: -75%;
   left: 86px;
 }
-.c-archive-image h1::after {
+.c-image .c-archive-image h1::after {
   content: "チーズバーガー";
   font-size: 16px;
   color: #fff;
@@ -1341,7 +1359,7 @@ article .p-lead .c-mune-top {
   }
 }
 .c-main-img {
-  margin: 50px 20px;
+  margin: 50px 60px;
 }
 @media (max-width: 576px) {
   .c-main-img {
@@ -1398,6 +1416,8 @@ button {
   font-family: Roboto;
   font-size: 64px;
   font-weight: normal;
+}
+.l-header_title_color a {
   color: #707070;
 }
 

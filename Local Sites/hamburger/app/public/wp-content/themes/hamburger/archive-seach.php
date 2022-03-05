@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="Hamburger">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Hamburger</title>
-    <link rel='stylesheet' href="css/sample.css">
-    <script src="https://kit.fontawesome.com/055b8d114c.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-</head>
-<div class="l-module">
-    <div class="l-content">
-        <header class="l-header">
-            <div class="p-header">
-                <h1 class="p-header_title l-header_title_color">Hamburger</h1>
-                <div class="o-button">Menu</div>
-                <form class="p-header_form">
-                    <button type="submit" class="l-label l-label_color">
-                <div class="search icon"></div>
-            </button>
-                    <input type="submit" value="検索" class="l-qanda l-qanda_color">
-                </form>
-            </div>
-        </header>
+<?php get_header();?>
         <main>
             <div class="c-archive-image">
                 <h1>search:</h1>
@@ -35,6 +9,33 @@
                         <h2>小見出しが入ります</h2>
                         <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     </div>
+                        <?php
+                        if( have_posts() ) :
+                            while( have_posts() ) :
+                                the_post(); ?>
+                                     <!-- 繰り返し処理する内容 -->
+                                     <h3 class="p-lead"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                            <!-- <h3>チーズバーガー</h3> -->
+                                            <?php the_excerpt(); ?>
+                                            <h4>見出しが入ります<a href="<?php the_permalink(); ?>"><?php the_title(); ?></h4>
+                                            <span>小見出しが入ります</span>
+                                            <!-- <p>見出しが入ります。見出しが入ります。見出しが入ります。見出しが入ります。見出しが入ります。見出しが入ります。見出しが入ります。見出しが入ります。見出しが入ります。見出しが入ります。</p> -->
+                                            <a href="<?php the_permalink(); ?>">
+                                            <?php if( has_post_thumbnail()): ?>
+                                            <?php the_post_thumbnail('medium'); ?>
+                                            <?php else: ?>
+                                                <img sre="<?php echo get_template_directory_uri(); ?>/css/image/bottom.png">
+                                                <?php endif; ?>
+                                            </a>
+                                            <div class="c-button_wrapper">
+                                                <button class="button-top">詳しく見る</button>
+                                            </div>
+                                            <div class="c-mune-top"></div>
+                                        </h3>
+                                <?php endwhile; ?>
+                            <?php else: ?>
+                                <!-- 投稿データがない場合表示される部分 -->
+                            <?php endif; ?>
                     <div class="p-lead">
                         <h3>チーズバーガー</h3>
                         <h4>見出しが入ります</h4>
@@ -116,50 +117,6 @@
         </main>
     </div>
     </body>
-    <div class="l-side ">
-        <div class="o-side_button"></div>
-        <div class="p-side">
-            <div class="p-side_menu">
-                <h2>Menu</h2>
-                <h3>バーガー</h3>
-                <ul>
-                    <li>ハンバーガー</li>
-                    <li>チーズバーガー</li>
-                    <li>テリヤキバーガー</li>
-                    <li>アボガドバーガー</li>
-                    <li>フィッシュバーガー</li>
-                    <li>ベーコンバーガー</li>
-                    <li>チキンバーガー</li>
-                </ul>
-                <h3>サイド</h3>
-                <ul>
-                    <li>ポテト</li>
-                    <li>サラダ</li>
-                    <li>ナゲット</li>
-                    <li>コーン</li>
-                </ul>
-                <h3>ドリンク</h3>
-                <ul>
-                    <li>コーラ</li>
-                    <li>ファンタ</li>
-                    <li>オレンジ</li>
-                    <li>アップル</li>
-                    <li>紅茶（Ice/Hot）</li>
-                    <li>コーヒー(Ice/Hot)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php get_sidebar();?>
 </div>
-<footer>
-    <div class="l-footer">
-        <div class="c-footer">
-            <span class="c-footer-text">ショップ情報｜ヒストリー</span>
-            <p class="c-footer-p">Copyright: RaiseTech</p>
-        </div>
-    </div>
-</footer>
-<script src="js/script.js"></script>
-</body>
-
-</html>
+<?php get_footer();?> 
