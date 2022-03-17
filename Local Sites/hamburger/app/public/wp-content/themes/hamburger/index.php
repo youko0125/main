@@ -5,29 +5,26 @@
             <main class="l-main">
                 <div class="c-main">       
                     <!-- <img class="c-sample "src="<?php echo get_template_directory_uri();?>/css/img/takeout.png"/> -->
-                 <div class="c-main-img ">
-                 <ul>
-                    <?php 
-                        if(have_posts()): while(have_posts()): the_post();
-                        $category = get_the_category();
-                        $img = get_field('TakeOut','category'.'_'.$category[0]->term_id);
+                 <div class="c-main-img "> 
+                 <?php
+                                        
+                            // 指定したカテゴリーの ID を取得
+                            $category_id = get_cat_ID( '13' );  //IDは13
+                            $category_link = get_category_link( $category_id);  // このカテゴリーの URL を取得
+                            $img = get_field('TakeOut','category'.'_'.$category_id);
+                            $custom_fields= get_post_custom( $post_id ); // カスタムフィールド取得
+                            $thumb = get_the_post_thumbnail($post->ID); // アイキャッチ画像取得
                         ?>
-                        <li><img src="<?php echo $img['url']; ?>" alt="<?php echo $category[0]->name;  ?>"class="c-sample" ></li>
-                    <?php endwhile; endif; ?>
-                    <?php 
-                        if(have_posts()): while(have_posts()): the_post();
-                        $category = get_the_category();
-                        $img = get_field('EatIn','category'.'_'.$category[0]->term_id);
-                        ?>
-                        <li><img src="<?php echo $img['url']; ?>" alt="<?php echo $category[1]->name;  ?>"class="c-EatIn" ></li>
-                    <?php endwhile; endif; ?>
-                </ul>         
+                        <!-- このカテゴリーへのリンクを出力  -->
+                        <a href="<?php echo get_category_link( $category_id ); ?>">TakeOut</a>  
+                        <img src="<?php echo $img['url'];  ?>" alt="<?php echo $category_id ?>"class="c-sample" >   
+                        
                    <!-- <p>Take Out</p> -->
                            <div class="c-main_inner">
                                <div class="c-inner ">
                                    <h4 class="inner_list ">Take OUT</h4>
                                    <p class="inner-text c-font-color ">当店のテイクアウトで利用できる商品を掲載しています</p>
-                               </div>
+                                </div>
                                <div class="c-item">
                                    <h4 class="inner_list ">Take OUT</h4>
                                    <p class="inner-text c-font-color ">当店のテイクアウトで利用できる商品を掲載しています</p>

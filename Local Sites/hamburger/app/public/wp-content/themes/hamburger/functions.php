@@ -95,6 +95,14 @@ $query->set('post_type', array( 'post', 'page', 'nav_menu_item'));
 } 
 } 
 
+function add_post_content($content) {
+	if(!is_feed() && !is_home()) {
+		$content .= '<p>This article is copyright © '.date('Y').' '.bloginfo('name').'</p>';
+	}
+	return $content;
+}
+add_filter('the_content', 'add_post_content');
+
 
  
 
