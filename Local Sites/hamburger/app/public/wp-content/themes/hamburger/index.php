@@ -9,17 +9,17 @@
                  <?php
                                         
                             // 指定したカテゴリーの ID を取得
-                            $category_id = get_cat_ID( '13' );  //IDは13
+                            $category_id = get_cat_ID( 'TakeOut' );  //引数はカテゴリー名を入れる
                             $category_link = get_category_link( $category_id);  // このカテゴリーの URL を取得
                             $img = get_field('TakeOut','category'.'_'.$category_id);
                             $custom_fields= get_post_custom( $post_id ); // カスタムフィールド取得
                             $thumb = get_the_post_thumbnail($post->ID); // アイキャッチ画像取得
+                           
                         ?>
                         <!-- このカテゴリーへのリンクを出力  -->
-                        <a href="<?php echo get_category_link( $category_id ); ?>">TakeOut</a>  
                         <img src="<?php echo $img['url'];  ?>" alt="<?php echo $category_id ?>"class="c-sample" >   
                         
-                   <!-- <p>Take Out</p> -->
+                   <p>Take Out</p>
                            <div class="c-main_inner">
                                <div class="c-inner ">
                                    <h4 class="inner_list ">Take OUT</h4>
@@ -35,7 +35,18 @@
                        <div class="c-main-img ">
                      
                            <!-- <img class="c-EatIn "src="<?php echo get_template_directory_uri();?>/css/img/EatIn.png"/> -->
-                           <!-- <p>Eat In</p> -->
+                           <p>Eat In</p>
+                           <?php
+                           $category_id = get_cat_ID( 'EatIn' );
+                           $category_link = get_category_link( $category_id );
+                           $img = get_field('EatIn','category'.'_'.$category_id);
+                           $custom_fields= get_post_custom( $post_id ); // カスタムフィールド取得
+                           $thumb = get_the_post_thumbnail($post->ID); // アイキャッチ画像取得
+                           ?>
+                       
+                        <img src="<?php echo $img['url'];  ?>" alt="<?php echo $category_id ?>"class="c-sample" > 
+
+
                            <div class="c-main_inner">
                                <div class="c-inner ">
                                    <h4 class="inner_list ">Take OUT</h4>

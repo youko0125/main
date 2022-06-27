@@ -1,4 +1,5 @@
 <form class="p-header_form" method="get" action="<?php echo home_url('/'); ?>">
+<!-- <form class="p-search-form" method="get" action="<?php echo home_url('/'); ?>"> -->
                         <button type="submit" class="l-label l-label_color">
                     <div class="search icon"></div>
                 </button>
